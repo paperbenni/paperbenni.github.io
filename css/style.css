@@ -19,7 +19,7 @@
 .icon-3d {
   padding: 10px;
   -webkit-animation: icon3d 200ms 10;
-  animation: icon3d 200ms 10;
+  animation: icon3d 200ms 2;
   color: #fff;
   font-size: 800%;
 }
