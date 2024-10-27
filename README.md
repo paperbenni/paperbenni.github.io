@@ -10,6 +10,4 @@ https://www.reddit.com/user/paperbenni
 
 https://discord.gg/YtFPW5F
 
-https://minecraftdocker.herokuapp.com
-
 mumble://FR2.imumble.nl:56778
