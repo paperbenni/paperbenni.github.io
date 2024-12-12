@@ -1,0 +1,61 @@
+baseURL: https://paperbenni.github.io/
+languageCode: en-us
+title: Paperbenni
+theme: PaperMod
+
+searchHidden: false
+
+params:
+  env: production
+  defaultTheme: dark
+  homeInfoParams:
+    Title: paperbenni
+    Content: >-
+      This is my blog. Mainly a place to keep intersting thoughts for myself to
+      read through. If other people find this interesting that doesn't hurt
+      either. Please expect quick and dirty posts, I am not going to be a
+      spending much time making any of this coherent, more of a thinking out
+      loud thing. 
+  socialIcons:
+    - name: youtube
+      url: https://www.youtube.com/paperbenni
+    - name: github
+      url: https://github.com/paperbenni
+    - name: reddit
+      url: https://www.reddit.com/user/paperbenni/
+    - name: twitter
+      url: https://twitter.com/paperbenni
+    - name: patreon
+      url: https://www.patreon.com/paperbenni
+    - name: email
+      url: 'mailto:paperbenni@gmail.com'
+    - name: kofi
+      url: 'https://ko-fi.com/paperbenni'
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 10
+
+
+fuseOpts:
+  isCaseSensitive: false
+  shouldSort: true
+  location: 0
+  distance: 1000
+  threshold: 0.4
+  minMatchCharLength: 0
+  keys:
+    - title
+    - permalink
+    - summary
+    - content
