@@ -1,6 +1,6 @@
 ---
 date: '2024-12-12T19:38:08+01:00'
-draft: true
+draft: false
 title: 'Software wishlist'
 showToc: true
 ---
@@ -11,6 +11,8 @@ For a while now I've been keeping a list of features or changes I really wish
 the software I use to have. I consider most of these to be obviously good ideas. 
 I don't feel particularly creative having come up with them and I'm not sure why
 these haven't been implemented yet in most cases. 
+
+# Software
 
 ## MacOS
 
@@ -72,4 +74,33 @@ Also last time I checked, K-9 Mail did have vim like shortcuts for moving up and
 down, but they were reversed. 
 
 
+## Google Drive
+
+The audio player has looots of problems. Its width is very narrow, so searching
+for a specific part of an audio file is very difficult and requires a lot of
+precision. Its design is very dated and there are no features like jumping ahead
+10 seconds or rewinding 10 seconds.
+
+The process for transferring ownership is very counterintuitive. Share the file,
+and in the list of people to share with, there is a menu option to transfer it
+next to the name of the person. 
+
+## Cosmic DE
+
+I am aware that this is alpha software, but just in case some of these problems
+aren't already being worked on, here are some things I noticed while using it.
+
+There is no media key support.
+
+A lot of the wallpapers look quite busy. I get that this is personal preference,
+but I'd like to have some wallpapers that fade into be background more. Most of
+the time you aren't actively looking at the wallpaper, it's just there while you
+look at something else, so it shouldn't be distracting or making things harder
+to read. 
+
+Super + right click drag allows resizing a window, but also right clicks on the
+window. 
+
+Scrolling with the mouse wheel while in the workspace switcher should switch
+workspaces like it does on Gnome. Right now it does nothing. 
 
