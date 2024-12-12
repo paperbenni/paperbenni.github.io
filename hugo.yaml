@@ -59,3 +59,13 @@ fuseOpts:
     - permalink
     - summary
     - content
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  posts:
+    - HTML
+    - RSS
+    - JSON
