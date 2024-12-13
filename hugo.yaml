@@ -8,6 +8,7 @@ searchHidden: false
 params:
   env: production
   defaultTheme: dark
+  comments: true
   homeInfoParams:
     Title: paperbenni
     Content: >-
