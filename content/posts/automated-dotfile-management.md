@@ -108,14 +108,52 @@ currently implemented in arch is not ideal.
 Maybe yadm can be automated, this document will contain some ideas on how to do
 that. 
 
-brainstorm stuff
+
+### Merge recursive ours
+
+This is relatively simple to implement, just automatically pull upstream changes
+and merge with the `--ours` strategy. This will preserve user changes wherever
+there is a conflict. The problem is that if there are no conflicts, this can
+still result in unexpected behaviors. If a user modifies a section of a dotfile
+that hasn't been changed upstream and upstream updates another section, the
+resulting dotfile will have both the user changes and the upstream changes.
+If both upstream and user have added the same key but in different locations,
+this will result in an invalid dotfile.
+
+### Custom merge driver
+
+Maybe I am just stupid, but I cannot find a built in way to guarantee a merge
+results in only files that have existed in that exact state in some branch. 
+
+Time to dig into git features where the amount of good tutorials and examples is
+single digits. 
+
+Merge drivers are programs which merge individual files if they have diverged
+between the two branches being merged. They can be implemented by custom
+programs which are then called by git when configured to do so.
+
+Git can pass arbitrary data from the merge process to the driver as arguments.
+In our case we pass the following arguments:
+
+- `base` is the last version of the file that is identical in both branches
+- `local` is the version of the file that is in the current branch
+- `remote` is the version of the file that is in the other branch
+- `output` is the file to write the result to
+
+If there are local changes, use the `local` version, otherwise use the `remote`
+version. 
+
+### brainstorm stuff
 
 - multiple yadm repos
 - upstream
 - auto commited local changes
 - keep track of local changes and merges
 
-//TODO
+Update process
+
+check if there are locally modified dotfiles
+add and commit all locally modified dotfiles
 
 
 
