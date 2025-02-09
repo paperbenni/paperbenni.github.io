@@ -14,6 +14,16 @@ these haven't been implemented yet in most cases.
 
 # Software
 
+
+## Firefox
+
+Why is there no shortcut to enter the settings on Linux?
+There is command + comma on MacOS, but not on Linux.
+
+Ctrl + comma is completely unused on Linux, and there is no other shortcut to
+open the settings. 
+
+
 ## MacOS
 
 The systray has tons of problems. Loads of apps rely on it, it contains
@@ -103,4 +113,11 @@ window.
 
 Scrolling with the mouse wheel while in the workspace switcher should switch
 workspaces like it does on Gnome. Right now it does nothing. 
+
+## [Spot](https://flathub.org/apps/dev.alextren.Spot)
+
+A list of keyboard shortcuts. There is no documentation of keyboard shortcuts
+built in, and there is no documentation on github either. There are some
+shortcuts
+
 
