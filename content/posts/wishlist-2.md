@@ -38,4 +38,12 @@ I do not know if this is technically even possible, or if this is a neovim
 issue, but it is annoying. 
 
 
+# yazi
+
+Ranger solves all of the technical issues ranger has. It is lacking the sheer
+number of easiliy accessible features ranger has though. 
+
+
+
+
 

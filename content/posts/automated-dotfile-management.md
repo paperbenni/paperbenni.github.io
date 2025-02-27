@@ -12,21 +12,21 @@ means that in order to ship a somewhat functional system out of the box, user
 settings need to be managed in some automated way, unless the user modifies them manually.
 
 In that case, automated change in these files can be very destructive, as it
-could leat to unexpected behaviors or loss of user customizations. 
+could leat to unexpected behaviors or loss of user customizations.
 
 I aim to create a system that will not trip up users who do not know about it
-and which will quietly in the background. 
+and which will quietly in the background.
 
 ## Imosid
 
-My first attempt at automating dotfile management was the [imosid](https://github.com/instantos/imosid). 
+My first attempt at automating dotfile management was the [imosid](https://github.com/instantos/imosid).
 This project has somewhat ballooned to being way more work than anticipated, and
 while a good opportunity to learn some Rust, it might ultimately not be a good
 fit for automated dotfile management.
 
 The idea behind imosid is to divide the config file into sections, and then
 compute a hash for each section. If the section changes, then the hash will no
-longer match its contents and the section will stop receiving updates. 
+longer match its contents and the section will stop receiving updates.
 
 A user should not have to know about imosid or have to pay attention to it.
 Section syntax can be broken or invalid, and imosid will just quietly mark the
@@ -35,7 +35,7 @@ unmodified.
 
 The section approach has a few problems. There can be no dependency between
 sections. If a section references another section, then updates to the first
-section may break the second section. 
+section may break the second section.
 
 The naive solution to this problem is that anything that any dependencies of a
 section should be part of that section. This means sections can grow quite big,
@@ -62,21 +62,21 @@ Yadm is basically just a git wrapper. It tracks the entire home directory as a
 git repository, but defaults to ignoring every file except for files explicitly
 added. The fact that the home directory is the working directory means that
 dotfiles can be edited directly in their intended locations and never get
-overwritten by third party tools. 
+overwritten by third party tools.
 
 Of course, git seldom fails quietly. Yadm doesn't have a built in way to be used
 non-interactively, if a user modifies a dotfile that is tracked by yadm, yadm
 (being git) will just refuse to do anything until the user commits the change or
-gets rid of it. 
+gets rid of it.
 
 I do not want my terminal colors to stop updating just because I changed my
 bashrc, so my goal now is to create a system that will update dotfiles via yadm,
-but stops updating a dotfile as soon as it diverges from the yadm version. 
+but stops updating a dotfile as soon as it diverges from the yadm version.
 
 ## Pacdiff
 
 As a little side note, the way Arch handles dotfile updates also has a few
-problems, namely that it requires user interaction at every point. 
+problems, namely that it requires user interaction at every point.
 
 Root owned config files are included inside pacman packages, but at the same
 time are meant to be edited by the user. This means that when updating a package
@@ -87,7 +87,7 @@ has done modifications which should not be overwritten, or if it is simply from
 an older version of the package. In the latter case it should not be a problem to
 simply overwrite the file. It might in fact be a good idea to overwrite the
 file, since new versions of the package might require a different format of the
-config file. 
+config file.
 
 This means the user is required to review the differences between the current
 and new version of the file and can then merge them manually. It might be
@@ -98,7 +98,7 @@ next to the new keys.
 
 There are plenty of users of Arch based distros who do not know about this and
 just end up using really old version of config files with newer versions of the
-program they configure. 
+program they configure.
 
 I do not know what the best solution to this problem is, but the way it is
 currently implemented in arch is not ideal.
@@ -106,7 +106,7 @@ currently implemented in arch is not ideal.
 ## Automated yadm?
 
 Maybe yadm can be automated, this document will contain some ideas on how to do
-that. 
+that.
 
 
 ### Merge recursive ours
@@ -123,10 +123,10 @@ this will result in an invalid dotfile.
 ### Custom merge driver
 
 Maybe I am just stupid, but I cannot find a built in way to guarantee a merge
-results in only files that have existed in that exact state in some branch. 
+results in only files that have existed in that exact state in some branch.
 
 Time to dig into git features where the amount of good tutorials and examples is
-single digits. 
+single digits.
 
 Merge drivers are programs which merge individual files if they have diverged
 between the two branches being merged. They can be implemented by custom
@@ -141,7 +141,37 @@ In our case we pass the following arguments:
 - `output` is the file to write the result to
 
 If there are local changes, use the `local` version, otherwise use the `remote`
-version. 
+version.
+
+## Dumb git script
+
+This is purely for brainstorming, not meant to be comprehensible to anyone but
+me. 
+
+Clone yadm repo
+
+update:
+
+fetch
+get list of modified files, create automated commit
+name scheme
+- date
+- auto marker
+remember hash
+merge upstream
+get list of merge conflicts
+for each conflict do git checkout file from last auto commit
+add all conflict files
+automated commit 2
+
+ideas for implementation
+maybe don't use yadm at all
+TODO for looking up
+- git worktrees
+- how does yadm work
+- ignore all by default? How does yadm do that?
+- use bash?
+- use libgit2?
 
 ### brainstorm stuff
 
@@ -154,6 +184,3 @@ Update process
 
 check if there are locally modified dotfiles
 add and commit all locally modified dotfiles
-
-
-
