@@ -13,6 +13,13 @@ are less obvious, but I would still very much like to have them.
 Maybe I will even update this list if the features are added or if I get around
 to adding them myself. 
 
+# Neovim
+
+Async treesitter parsing in insert mode. or maybe pause treesitter parsing in
+insert entirely. Maybe revert to regex parsing in insert mode. It doesn't look
+great, but I don't particularly care if I can avoid half a second of latency on
+every keystroke. 
+
 # Snacks.nvim
 
 This is a plugin suite for neovim which has a remarkable amount of features with
@@ -37,6 +44,10 @@ when pickers are open or find a way to stay open in the background.
 I do not know if this is technically even possible, or if this is a neovim
 issue, but it is annoying. 
 
+## Mini.pairs
+
+Give me a keybind to jump outside of the pair. 
+Give me the ability to disable the plugin in specific file types or buffers. 
 
 # yazi
 

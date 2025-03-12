@@ -11,4 +11,14 @@ Latex in markdown is in a surprisingly early state of development, and not a lot
 of well maintained plugins are out there. 
 
 
+TOPIC list
+
+state of vs code for this
+
+obsidian latex suite
+- malfunctioning snippets?
+- What snippet engine is this?
+- Very good default snippets
+- snippet expansion while within a latex command is bad
+
 
