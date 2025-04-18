@@ -173,14 +173,6 @@ TODO for looking up
 - use bash?
 - use libgit2?
 
-### brainstorm stuff
 
-- multiple yadm repos
-- upstream
-- auto commited local changes
-- keep track of local changes and merges
 
-Update process
 
-check if there are locally modified dotfiles
-add and commit all locally modified dotfiles
