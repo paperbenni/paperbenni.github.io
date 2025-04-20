@@ -69,6 +69,17 @@ This bothered me enough to write a plugin for it
 (https://github.com/paperbenni/obsidian-zenmode), but auto hiding the UI would
 be even better.
 
+### Excalidraw
+
+The Excalidraw plugin is very popular and very good at what it does, as well as
+being a good workaround for things that are hard to implement into core
+Obsidian. What I'm really suprised by is that there is no PDF exporter for
+Excalidraw drawings. And it shouldn't be too hard to build either. Excalidraw
+drawings can be embedded into normal markdown notes, which can in turn be
+exported to PDF. This requires creating a new note containing just the drawing
+each time you want to export a note, but it works. I would love to get rid of
+these 'placeholder' notes be able to export drawings directly into PDF, even if
+it uses the same process on the backend. 
 
 
 ## K-9 Mail
