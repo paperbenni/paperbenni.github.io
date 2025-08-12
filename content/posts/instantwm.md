@@ -1,6 +1,6 @@
 ---
 date: '2025-08-12T16:34:29+02:00'
-draft: true
+draft: false
 title: 'The Future of instantWM'
 showToc: true
 ---
@@ -152,9 +152,15 @@ replicate the features which were unique to instantWM while also decreasing the
 maintenance burden. 
 
 The other drawback is that the Hyprland developer is currently banned from
-freedesktop, and regardless of who did what, relying on a project which has an
+freedesktop, and regardless of what went down, relying on a project which has an
 adverserial relationship with the biggest organisation in the world of Linux
-desktop development sounds a bit worrysome. 
-
+desktop development sounds a bit worrysome. That said, this incident seemed to
+only involve the Hyprland founder and an individual person within freedesktop
+who had a disagreement over a badly moderated Discord server with offensive
+jokes and an asshole moderator in it. The project at large does not seem
+involved in tons of drama, and if the developer is a transphobic lunatic, he at
+least doesn't talk about it. Hyprland is at this point developed by multiple
+people and big enough to be a target for application developers or at least big
+enough for people to fix enough issues so that most software runs on it. 
 
 
