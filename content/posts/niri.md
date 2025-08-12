@@ -1,6 +1,6 @@
 ---
 date: '2025-06-11T11:53:26+02:00'
-draft: true
+draft: false
 title: 'Niri'
 showToc: true
 ---

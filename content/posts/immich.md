@@ -1,6 +1,6 @@
 ---
 date: '2025-02-10T13:33:25+01:00'
-draft: true
+draft: false
 title: 'Immich'
 showToc: true
 ---
@@ -14,6 +14,7 @@ storage, so going through your timeline can be very slow.
 The desktop version of immich is also worlds above whatever Google cannot manage
 to achieve. Video playback works without tons of buffering and dealing with what
 seems to be an outdated and probably unmaintained fork of the YouTube player. 
+(August 2025 update: they fixed the video player, yay!)
 
 I really wish it were stable though. The project is several years old now, has
 lots of users, developers and funding, so this is definitely a possibility.
@@ -63,4 +64,20 @@ backing up my photos. The backup process is absolutely critical for a photo app.
 I can deal with occasional jank when viewing photos, as long as I can trust that
 the photos are actually there. 
 
+---
+
+Also, side tangent, how is pausing videos still a problem? There is **MULTI SECOND LATENCY**
+when pausing a video. I have reproduced this on a OnePlus Nord 2 and a Pixel 6a,
+both visibly struggle with pausing a video. I want it paused immediately, not a
+second or two later. I want to continue the video where I paused it. 
+Why is most work happening with features like tagging and asset locking when
+video playback is still an open issue? Why is there a steadily growing list of
+thousands of features but nobody is working on making them actually stable?
+Is this becoming a Star Citizen like project? Do not get me wrong, I find Star
+Citizen do be very impressive, but it's not a game I would ever play besides
+going "huh, that's nice", and likewise, immich is impressive, but I want it to
+become more than impressive. I want it to become a part of my day to day life I
+do not have to think about. I want it to be just "my photos", not a cool piece
+of technology I can and have to fiddle around with, only to still get an
+experience that is great in some ways but very subpar in others. 
 
