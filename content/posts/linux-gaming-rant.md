@@ -17,7 +17,7 @@ I have long been using Linux as my primary operating system for gaming. Back
 when I couldn't get wine applications to access the internet I never ever would
 have thought that the majority of AAA games would ever run on Linux. I love the
 platform and am amazed at how far it has come. However, there are things that
-don't work on Linux. And often times the fault lies not with Linux developers.
+don't work on Linux. And oftentimes the fault lies not with Linux developers.
 However, this does not change the fact that some things still don't work, and
 problems don't get better if nobody talks about them. Lately I have increasingly
 come upon people on Linux communities who seem to function along the following
@@ -25,7 +25,7 @@ lines:
 
 Step 1: Come upon a statement. 
 
-Step 2: "I wouldn't like it if this was true, but I'm too lazy to look up if it
+Step 2: "I wouldn't like it if this were true, but I'm too lazy to look up if it
 is true, so I'm going to assume it's false"
 
 Step 3: Mercilessly attack anyone who makes the statement with the most
@@ -43,7 +43,7 @@ This means that the design of wine is fundamentally incompatible with the full
 current version of EasyAntiCheat, and any version running on Linux has the
 kernel level features disabled. 
 
-Assuming that the kernel level features do anything at all besides stealing data
+Assuming that the kernel-level features do anything at all besides stealing data
 means that by disabling them you will make cheating slightly easier. 
 
 Here's where the behavior mentioned earlier kicks in: Deny this fact, claim the
@@ -62,4 +62,4 @@ non-AI accounts who engaged in "the behavior" in the replies consistently had a
 positive upvote ratio. 
 
 The consequences of this are harm all around. The community's credibility is
-damaged, any request or claim from it will be met with scepticism. 
+damaged, any request or claim from it will be met with skepticism. 

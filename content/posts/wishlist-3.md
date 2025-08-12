@@ -7,6 +7,6 @@ showToc: true
 
 ## Zed
 
-- jupyter
-- markdown latex rendering
-- zen mode
+- Jupyter
+- Markdown LaTeX rendering
+- Zen mode

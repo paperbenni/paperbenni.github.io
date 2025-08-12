@@ -8,7 +8,7 @@ showToc: true
 
 # Lutris problems
 
-Lutris is a lot older than Proton and other versions of Wine which actually
+Lutris is much older than Proton and other versions of Wine that actually
 work. It was originally meant to be a universal game launcher with simple
-installers for games for as many platforms as possible.
+installers for as many games and platforms as possible.
 

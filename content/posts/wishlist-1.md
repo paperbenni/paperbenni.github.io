@@ -8,7 +8,7 @@ showToc: true
 # Software wishlist
 
 For a while now I've been keeping a list of features or changes I really wish
-the software I use to have. I consider most of these to be obviously good ideas. 
+the software I use had. I consider most of these to be obviously good ideas. 
 I don't feel particularly creative having come up with them and I'm not sure why
 these haven't been implemented yet in most cases. 
 
@@ -18,18 +18,18 @@ these haven't been implemented yet in most cases.
 ## Firefox
 
 Why is there no shortcut to enter the settings on Linux?
-There is command + comma on MacOS, but not on Linux.
+There is Command + Comma on macOS, but not on Linux.
 
 Ctrl + comma is completely unused on Linux, and there is no other shortcut to
 open the settings. 
 
 
-## MacOS
+## macOS
 
 The systray has tons of problems. Loads of apps rely on it, it contains
 functionality not available elsewhere. But it is fighting for space with the
 menu bar and the notch on modern Macbooks. Windows has had a simple overflow
-menu in forever, if an icon doesn't fit on the systray, there's an arrow to view
+menu in forever; if an icon doesn't fit on the systray, there's an arrow to view
 all icons which don't fit. On MacOS, icons which dont fit are simply hidden. You
 need to reorder and drag icons behind the notch until you get the one you want.
 This can take half a minute every single time and is extremely fiddly. 
@@ -54,9 +54,9 @@ panel shadow, but both are huge and make the interface look a bit dated.
 
 ## Obsidian
 
-Right now the experience of viewing pdf Files in Obsidian on mobile is
+Right now the experience of viewing PDF files in Obsidian on mobile is
 unfortunately borderline unusable. If I put my phone in landscape, less than 50%
-of the screen actually gets used for the pdf. Pdf content isn't adaptive and can
+of the screen actually gets used for the PDF. PDF content isn't adaptive and can
 get quite small, so for any pdf viewer, preserving screen space is very
 important 
 
@@ -73,12 +73,12 @@ be even better.
 
 The Excalidraw plugin is very popular and very good at what it does, as well as
 being a good workaround for things that are hard to implement into core
-Obsidian. What I'm really suprised by is that there is no PDF exporter for
+Obsidian. What I'm really surprised by is that there is no PDF exporter for
 Excalidraw drawings. And it shouldn't be too hard to build either. Excalidraw
 drawings can be embedded into normal markdown notes, which can in turn be
 exported to PDF. This requires creating a new note containing just the drawing
 each time you want to export a note, but it works. I would love to get rid of
-these 'placeholder' notes be able to export drawings directly into PDF, even if
+these 'placeholder' notes and be able to export drawings directly into PDF, even if
 it uses the same process on the backend. 
 
 
@@ -91,7 +91,7 @@ which you only need very infrequently then it is very annoying to have to scroll
 past them every time you want to open a top level folder which presumably gets
 more use. 
 
-Also last time I checked, K-9 Mail did have vim like shortcuts for moving up and
+Also last time I checked, K-9 Mail did have Vim-like shortcuts for moving up and
 down, but they were reversed. 
 
 
@@ -111,7 +111,7 @@ next to the name of the person.
 I am aware that this is alpha software, but just in case some of these problems
 aren't already being worked on, here are some things I noticed while using it.
 
-There is no media key support.
+There is no media-key support.
 
 A lot of the wallpapers look quite busy. I get that this is personal preference,
 but I'd like to have some wallpapers that fade into be background more. Most of
@@ -119,16 +119,16 @@ the time you aren't actively looking at the wallpaper, it's just there while you
 look at something else, so it shouldn't be distracting or making things harder
 to read. 
 
-Super + right click drag allows resizing a window, but also right clicks on the
+Super + right-click drag allows resizing a window, but also right-clicks on the
 window. 
 
 Scrolling with the mouse wheel while in the workspace switcher should switch
-workspaces like it does on Gnome. Right now it does nothing. 
+workspaces like it does on GNOME. Right now it does nothing. 
 
 ## [Spot](https://flathub.org/apps/dev.alextren.Spot)
 
 A list of keyboard shortcuts. There is no documentation of keyboard shortcuts
-built in, and there is no documentation on github either. There are some
+built in, and there is no documentation on GitHub either. There are some
 shortcuts
 
 

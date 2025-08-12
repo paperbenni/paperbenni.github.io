@@ -8,21 +8,21 @@ showToc: true
 # Introduction
 
 Time to make another software wishlist.
-This time the wishlist has some smaller open source software, and the features
+This time the wishlist has some smaller open-source software, and the features
 are less obvious, but I would still very much like to have them.
 Maybe I will even update this list if the features are added or if I get around
 to adding them myself. 
 
 # Neovim
 
-Async treesitter parsing in insert mode. or maybe pause treesitter parsing in
+Async Tree-sitter parsing in insert mode, or maybe pause Tree-sitter parsing in
 insert entirely. Maybe revert to regex parsing in insert mode. It doesn't look
 great, but I don't particularly care if I can avoid half a second of latency on
 every keystroke. 
 
 # Snacks.nvim
 
-This is a plugin suite for neovim which has a remarkable amount of features with
+This is a plugin suite for Neovim which has a remarkable number of features with
 remarkable quality. 
 
 The file explorer should have the ability to choose the window in which to open
@@ -37,22 +37,22 @@ Another plugin suite, also very well done.
 
 ## mini.files
 
-This currently acts odd if you try to open telescope or snack picker. 
+This currently acts odd if you try to open Telescope or Snack picker. 
 The picker appears for a second, but then both mini.files and the picker
 disappear. Opening the picker again then works. Maybe mini.files should close
 when pickers are open or find a way to stay open in the background.
 I do not know if this is technically even possible, or if this is a neovim
 issue, but it is annoying. 
 
-## Mini.pairs
+## mini.pairs
 
 Give me a keybind to jump outside of the pair. 
 Give me the ability to disable the plugin in specific file types or buffers. 
 
-# yazi
+# Yazi
 
-Ranger solves all of the technical issues ranger has. It is lacking the sheer
-number of easiliy accessible features ranger has though. 
+Yazi solves all of the technical issues Ranger has. It is lacking the sheer
+number of easily accessible features Ranger has, though. 
 
 
 
