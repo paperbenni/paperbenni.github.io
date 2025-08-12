@@ -20,12 +20,14 @@ them one after another until the current version is the newest one solves this
 problem, as the update script only gets executed on the version it was intended
 for. 
 
-
 # Issues
 
 If the incremental update script relies on packages that don't exist anymore, it
 will fail.  e.g. pamac-nosnap Replacing packages should maybe fail silently or
 just remove old packages if the suiteable replacement is not found anymore. 
 
+This issue is unsolved to date. Omarchy has a similar approach, but I also don't
+see how it can solve the problem of intermediate states of the update process
+being broken from the outside. 
 
 
