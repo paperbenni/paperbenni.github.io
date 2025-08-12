@@ -11,11 +11,11 @@ directory and have pretty much all their features disabled by default. This
 means that in order to ship a somewhat functional system out of the box, user
 settings need to be managed in some automated way, unless the user modifies them manually.
 
-In that case, automated change in these files can be very destructive, as it
-could leat to unexpected behaviors or loss of user customizations.
+In that case, automated changes in these files can be very destructive, as it
+could lead to unexpected behaviors or loss of user customizations.
 
 I aim to create a system that will not trip up users who do not know about it
-and which will quietly in the background.
+and which will run quietly in the background.
 
 ## Imosid
 
@@ -64,8 +64,8 @@ added. The fact that the home directory is the working directory means that
 dotfiles can be edited directly in their intended locations and never get
 overwritten by third party tools.
 
-Of course, git seldom fails quietly. Yadm doesn't have a built in way to be used
-non-interactively, if a user modifies a dotfile that is tracked by yadm, yadm
+Of course, git seldom fails quietly. Yadm doesn't have a built-in way to be used
+non-interactively. If a user modifies a dotfile that is tracked by yadm, yadm
 (being git) will just refuse to do anything until the user commits the change or
 gets rid of it.
 
@@ -78,7 +78,7 @@ but stops updating a dotfile as soon as it diverges from the yadm version.
 As a little side note, the way Arch handles dotfile updates also has a few
 problems, namely that it requires user interaction at every point.
 
-Root owned config files are included inside pacman packages, but at the same
+Root-owned config files are included inside pacman packages, but at the same
 time are meant to be edited by the user. This means that when updating a package
 which contains a new version of a config file, the file does not overwrite the
 current version, but instead gets saved as a pacnew file. Arch does not know if
@@ -96,12 +96,12 @@ unchanged by the user, and some settings have been removed from the new version,
 then the version an automated merge tool will produce will have old unused keys
 next to the new keys.
 
-There are plenty of users of Arch based distros who do not know about this and
+There are plenty of users of Arch-based distros who do not know about this and
 just end up using really old version of config files with newer versions of the
 program they configure.
 
 I do not know what the best solution to this problem is, but the way it is
-currently implemented in arch is not ideal.
+currently implemented in Arch is not ideal.
 
 ## Automated yadm?
 

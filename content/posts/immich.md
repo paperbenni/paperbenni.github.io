@@ -9,9 +9,9 @@ showToc: true
 
 
 Immich is amazing. It looks like Google Photos, it feels like Google Photos, and
-it's even faster. Google Photos tends to move infrequently Photos to really slow
+it's even faster. Google Photos tends to move infrequently accessed photos to really slow
 storage, so going through your timeline can be very slow. 
-The desktop version of immich is also worlds above whatever Google cannot manage
+The desktop version of Immich is also worlds above whatever Google cannot manage
 to achieve. Video playback works without tons of buffering and dealing with what
 seems to be an outdated and probably unmaintained fork of the YouTube player. 
 (August 2025 update: they fixed the video player, yay!)
@@ -19,26 +19,26 @@ seems to be an outdated and probably unmaintained fork of the YouTube player.
 I really wish it were stable though. The project is several years old now, has
 lots of users, developers and funding, so this is definitely a possibility.
 
-I really really cannot use it for more than occasinally playing around with it.
+I really, really cannot use it for more than occasionally playing around with it.
 Every time I do, I really enjoy myself until I get to some huge problem which
 means I cannot use it to replace Nextcloud or Google Photos.
 
 During the last update, somehow the password of the database user was changed. I
 did not update the database, just the immich server. 
-The database in the recommended docker compose file is tagged with a hash, which
+The database in the recommended Docker Compose file is tagged with a hash, which
 is usually not a sign that it is a recommended or stable version, so it might
-have been a bug in the database, or the server has permission and shomehow need
+have been a bug in the database, or the server had permission and somehow needed
 to change or delete the password. I manually changed the password back using the
-psql cli inside the database container, and not everything is working again. 
-Running imperative commands on a database with docker where everything supposed
+psql CLI inside the database container, and now everything is working again. 
+Running imperative commands on a database with Docker where everything is supposed
 to be declarative feels pretty dirty, and the fact that the DB can still get
 messed up is scary enough for immich not to be a good backup solution yet.
 
 The backup UI on the mobile app is either very unclear or very buggy. 
-I am not a fan of the header "Uploading file info". It sounds like it's just
+I am not a fan of the header "Uploading file info." It sounds like it's just
 uploading metadata, when it is actually uploading the file.
 
-The remainder count frequently shows 0, even though there are still photos and
+The remaining count frequently shows 0, even though there are still photos and
 videos currently uploading. The total and backup counters are a bit unclear as
 well. Does Total refer to the total number of files for my account, or the total
 number of photos on my device, regardless of how many have been backed up?
@@ -48,13 +48,13 @@ were uploaded manually or from other devices?
 What does the Backup counter mean then? How many files are on my account? Why is
 it higher than the Total counter?
 
-The progress bar for uploading files is very unclear as well. Right now I am
+The progress bar for uploading files is very unclear as well. Right now, I am
 looking at my phone, and the bar is stuck at 100% for a file. I am unsure if the
 file is uploaded already, or if it is at least being counted as uploaded. The
 "Start Backup" button is still there, so it might not be doing anything. Tapping
-the "Start Backup button" turns it into a "Cancel" button, after which the 100%
+the "Start Backup" button turns it into a "Cancel" button, after which the 100%
 bar does not change, and nothing appears to be happening. There is no indication
-that there are not any files to upload either. It might even be better to show
+that there are any files to upload either. It might even be better to show
 the amount of files which will be uploaded before starting the backup, or
 disable the "Start Backup" button if there are no files to upload.
 
@@ -66,15 +66,15 @@ the photos are actually there.
 
 ---
 
-Also, side tangent, how is pausing videos still a problem? There is **MULTI SECOND LATENCY**
+Also, side tangent: how is pausing videos still a problem? There is **MULTI-SECOND LATENCY**
 when pausing a video. I have reproduced this on a OnePlus Nord 2 and a Pixel 6a,
 both visibly struggle with pausing a video. I want it paused immediately, not a
 second or two later. I want to continue the video where I paused it. 
 Why is most work happening with features like tagging and asset locking when
 video playback is still an open issue? Why is there a steadily growing list of
 thousands of features but nobody is working on making them actually stable?
-Is this becoming a Star Citizen like project? Do not get me wrong, I find Star
-Citizen do be very impressive, but it's not a game I would ever play besides
+Is this becoming a Star Citizen-like project? Do not get me wrong, I find Star
+Citizen to be very impressive, but it's not a game I would ever play besides
 going "huh, that's nice", and likewise, immich is impressive, but I want it to
 become more than impressive. I want it to become a part of my day to day life I
 do not have to think about. I want it to be just "my photos", not a cool piece
