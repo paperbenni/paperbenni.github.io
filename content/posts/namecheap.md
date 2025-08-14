@@ -5,6 +5,12 @@ title: 'Namecheap is horrible'
 showToc: true
 ---
 
+# It's horrible
+
+Stay away from it. They are not capable of delivering anything resembling good
+service. 
+
+
 # Horrible UI
 
 The UI is terrible. 
@@ -48,19 +54,30 @@ cursor is on the gap.
 Side note, all other menu entries in the navbar also have hove-over menus, but
 do not have this problem. 
 
+Everywhere I look there's low hanging fruit of problems to fix. 
+
+Scrolling down to the footer makes the sidebar flicker and rapidly move up and
+down. 
+
+They use images for icons. As in a rasterized image format. 
+
+The arrow in their breadcrumbs component is not aligned properly, and also too
+small. 
+
+Code blocks in their API docs have vertical misalignment and use multiple font
+sizes for some reason. Syntax highlighting on links is also broken. 
 
 
-# They think you're stupid
+# They think you're smart but stupid
 
-Setting DNS records is hidden behind the "advanced settings" panel. 
-This means they assume their UI can be used by anyone who is not a power user or
-knows what they are doing. 
-The famous "casual DNS management user", a staple of all user stories and in
-persona testing. Who is able to put up with all the bugs in the UI, able to run
-their own website, but will get scared when presented with a list of DNS
-records. 
-And who also thinks the most important feature which should be easily reachable
-is giving Namecheap more money. 
+Setting DNS records is hidden behind the "advanced settings" panel. This means
+they assume their UI can be used by anyone who is not a power user or knows what
+they are doing. The famous "casual DNS management user", a staple of all user
+stories and persona testing meetings. Someone who is able to put up with all the
+bugs in the UI, able to run their own website, but will get scared when
+presented with a list of DNS records, and who also thinks the most important
+feature which should be easily reachable is giving Namecheap more money. 
+
 
 
 # It's lacking features
@@ -70,9 +87,8 @@ There is no way to export them either.
 
 # The API is horrible
 
-It returns XML. 
-Its documentation is does not have a search feature. 
-There is no API Method to add a single entry. You have to override all entries
-every single time. 
+It returns XML. Its documentation is does not have a search feature. There is no
+API Method to add a single entry. You have to override all entries every single
+time. 
 
 
