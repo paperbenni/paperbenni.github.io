@@ -4,6 +4,7 @@ draft: false
 title: 'Automated Dotfile Management'
 showToc: true
 ---
+
 ## Introduction
 
 instantOS relies on a lot of tools which use plaintext configuration in the home
@@ -102,6 +103,36 @@ program they configure.
 
 I do not know what the best solution to this problem is, but the way it is
 currently implemented in Arch is not ideal.
+
+## Why not stow
+
+stow symlinks files from a git repo to a directory in the home directory. This
+means users editing the files will directly edit them in the git repo and we're
+back to having problems with updates. 
+That said, if stow offered the ability to ignore files already existing, this
+could work. 
+
+Updating could work like this:
+
+- Go to the git repo
+- List all files with changes
+- For all of these, remove the symlink, copy the actual file to the target
+destination
+- Checkout the files in the git repo to restore them to a clean state. 
+- Run stow again to create any new symlinks
+
+TODO: Look up
+- What happens in stow if a file already exists?
+- What happens if a symlink already exists? Can we override it?
+
+Side note, files can easily be reset by deleting them and running stow again
+
+If symlinks can easily be overwritten, then themes, community plugins etc. are
+all possible. 
+
+We do lose access to template like things like yadm, but maybe that can be
+reintroduced. Maybe even with more widely used templating languages. 
+
 
 ## Automated yadm?
 
