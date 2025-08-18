@@ -16,7 +16,7 @@ params:
       read through. If other people find this interesting that doesn't hurt
       either. Please expect quick and dirty posts, I am not going to be a
       spending much time making any of this coherent, more of a thinking out
-      loud thing. 
+      loud thing.
   socialIcons:
     - name: youtube
       url: https://www.youtube.com/paperbenni
@@ -29,9 +29,11 @@ params:
     - name: patreon
       url: https://www.patreon.com/paperbenni
     - name: email
-      url: 'mailto:paperbenni@gmail.com'
+      url: "mailto:paperbenni@gmail.com"
     - name: kofi
-      url: 'https://ko-fi.com/paperbenni'
+      url: "https://ko-fi.com/paperbenni"
+    - name: rss
+      url: "https://paperbenni.xyz/posts/index.xml"
 menu:
   main:
     - identifier: home
@@ -54,7 +56,6 @@ menu:
       name: Search
       url: /search/
       weight: 10
-
 
 fuseOpts:
   isCaseSensitive: false
