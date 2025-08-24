@@ -87,6 +87,12 @@ As of now, as far as I can tell, this is not present with most coding agents.
 If your code base is large, you cannot put it all in the context. 
 If your code base is not shit, you don't need all of it to understand just a
 part of it. 
+You should be very selective about which parts of the codebase you put into the
+context. If what you ask of the LLM is not a complete refactor or rewrite, then
+it will need very specific parts of it. It will most likely start with listing
+the files in your project and opening the ones most likely to contain the code
+which needs modification or which relates to the feature request
+
 
 
 
