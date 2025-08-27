@@ -30,4 +30,7 @@ This issue is unsolved to date. Omarchy has a similar approach, but I also don't
 see how it can solve the problem of intermediate states of the update process
 being broken from the outside. 
 
-
+//TODO
+Take inspiration from alembic
+Highlight why alembic approach might not work because external dependencies for
+intermediate states might be gone
