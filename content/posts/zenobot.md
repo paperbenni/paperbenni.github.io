@@ -208,6 +208,19 @@ are two conflicting memories, and can remove the older one.
 
 ## Chat
 
+### Context
+
+Currently relevant memories
+recent chat messages
+
+### Tools
+
+Store memories
+
+### Task
+
+Chat with user and record memories
+
 ## Reminder
 
 Context
@@ -219,6 +232,19 @@ Tools
 
 - Send Message
 - Save Memory
+
+## Followup
+
+### Context
+
+Random assortment of memories and their related memories
+
+### Task
+
+Look for memories which are unclear and need confirmation from the user
+Send that question to the user. 
+After that, resume giving control to the chat agent. The chat agent will record
+the answer, and other agents will then combine the memories. 
 
 # Gardening Agents
 
