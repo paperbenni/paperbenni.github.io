@@ -82,33 +82,23 @@ NocdeRegustry = [AnswerKind, Node]
 
 build_dependencies
 while get_unsatisfied(unsatifyed)
-    for leaf in leaves
-        answer = askquestion
-        match answer {
-            Back => goback
-            Data => anserstack.push(AnswerKind>
-        }
-    if junctions.not_empty
-        ask junctions[0]
-            data =>
-                answerstack.push([newdependencies])
-                axtivequ3stions.extend(newdependencies)
-                deduplicate axtiveanswrrs
-            back => goback
+    for step in step
+        if step.cinditions.active
+            if step.unanswered
+                return step
+
+
+struct stepCondition
+    ValueEquals(stepID, val)
+    ValueNot(stepID, val)
+    ValueIn(stepID, vec val)
+
+
 
 goback()
-    match answerstack.pop
-        junction
-            axtiveanswers.remove(junctiondep3ndencies)
-        anseer
-            answerregistry.remove(answe4kind)
-
-fn cleanDependencies
-    if multiple_branches_satisfied:
-        choose_branch_to_keep
-        remove dependencies of other branches
-        readd_dependencies_of_kept_branch
-
+    for answer in get_active()
+        if active[i+1] = currentstep
+            currentstep = axtice[i]
 
 trait Leaf<data>
     data: data
@@ -135,18 +125,16 @@ askLeaf(leaf)
             verify
 
 
-Step {
-    junction(vec<AskDependency>)
-    Leaf(askstuff)
+struct Step {
+    junction: Option vec<AskDependency>)
+    question: Option<Leaf(askstuff)>
 }
 
 
 struxt AskDependenxy {
-name: string
-dependencies: [dependency]
+    name: string
+    dependencies: [dependency]
 }
-
-
 
 
 
@@ -160,11 +148,7 @@ fn get_unsatisfied(ActiveQuestions, NkdeRegistry)
         if question unsatisfied
             return question
 
-instantosconfig
-deoends on
-    UserName
-    ParitionConfig
-
+    
 
 
 ```
