@@ -235,6 +235,14 @@ Tools
 
 ## Followup
 
+Find incomplete tasks or memories which make no sense or are of no use without
+more information from the user. 
+
+## Critic
+
+Find tasks the user might be putting off, find uncomfortable truths which can be
+deduced from the memories. Try to push the user to become a better person.
+
 ### Context
 
 Random assortment of memories and their related memories
