@@ -1,0 +1,2 @@
+default:
+    nvim content/posts/
