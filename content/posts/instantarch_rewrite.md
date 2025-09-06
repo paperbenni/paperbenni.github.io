@@ -75,6 +75,7 @@ Enum QuestionType {
 # Alternative approach
 
 ```
+type StepId = string
 
 answerRegistry = Map<AnswerKind, Answer>
 ActiveQuestuons = [AnsswerKind]
