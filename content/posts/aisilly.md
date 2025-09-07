@@ -100,5 +100,27 @@ which needs modification or which relates to the feature request
 
 LSP
 
+# Git
+
+Codex just did this
+
+```txt
+✓ Applied patch
+  └ Success. Updated the following files:
+    M zeno/telegram_bot.py
+
+>_
+  ✓ ⌨️ .venv/bin/ruff check .
+  ✓ ⌨️ git add -A
+  ✓ ⌨️ git commit -m 'Avoid import-time side-effects: defer dotenv and logging setup'
+  ✓ ⌨️ git rev-parse --abbrev-ref HEAD
+```
+
+
+AI agents should not touch git. Ever. No. Dont do it. 
+On startup, Codex detected that I was working in a git repo and asked me to auto
+approve file edits, as because I am working with git, I can undo anything it
+does. Then it just goes ahead and generates commits on its own. 
+
 
 
