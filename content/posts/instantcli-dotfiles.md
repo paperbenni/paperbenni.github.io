@@ -7,7 +7,7 @@ showToc: true
 
 # Idea
 
-I want to unify lots of things into an instantCLI
+I want to unify lots of instantOS things into an instantCLI
 the base command will just be `instant`
 
 # Dotfiles
@@ -52,7 +52,7 @@ and will be left alone.
 
 # resetting files
 
-If a modified file is markwd as valid, it will automatically be reset.
+If a modified file is marked as valid, it will automatically be reset.
 to the latest official version on the next update.
 
 # applying
@@ -70,17 +70,17 @@ struct dotfile {
 
 impl dotfile {
     fn is_outdated(self) -> bool {
-        if not self.target_path.exists
+        if not self.target_path.exists()
             return true
-        if self.source newer than self.target
+        if self.source is newer than the target
             return true
-        currenthash = self.get
+        current_hash = self.get
     }
 
-    fn is_modified(self) {
-        if not self.target_path exists
+    fn is_modified(self) -> bool {
+        if not self.target_path.exists()
             modified = false
-        else if newest hash is newer than file modify date
+        else if newest_hash is newer than file modification date
             modified = false
         else if self.get_target_hash in get_valid_hashes(self.path)
             modified = false
@@ -88,14 +88,14 @@ impl dotfile {
             modified = true
     }
 
-    fn get_target_hash() {
-        if ! target_path exists
+    fn get_target_hash() -> Option<Hash> {
+        if !target_path.exists()
             return none
-        if hashes.contsins(self.path) and self.path is older {
+        if hashes.contains(self.path) and self.path is older {
             return newest hashes[self.path]
         } else {
             newhash compute_hash(target_path)
-            if hashes[newhash] exists
+            if hashes.get(newhash) is not None
                 return hashes[newhash]
             else
                 savehash(newhash)
@@ -104,32 +104,32 @@ impl dotfile {
     }
     
     fn get_source_hash() {
-        // similar to target_hash, but hash should he inserted into
+        // similar to target_hash, but hash should be inserted into
 valid_hashes. Slightly less lazy
     }
     fn apply {
-        if self.modified()
+        if self.is_modified()
             return
-        if not self.is_outdated
+        if not self.is_outdated()
             return
-        cp self.sourcefile self.targetpath
-        compute and save target hash
+        cp self.source_file self.target_path
+        compute_and_save_target_hash()
     }
 
     fn fetch {
-        if self.modified or self.currenthash != self.tsrgethash
-            cp self.targetpath self.sourcefile
+        if self.modified or self.current_hash != self.targethash
+            cp self.target_path self.source_file
     }
 }
 
-filemap = hashmap<filepath, dotfile>
+filemap = HashMap<FilePath, Dotfile>
 
 for repo in repos
     for file in repo.update_file_tree
         //this should override things when same path
         filemap.insert(path, file)
 
-for file on foilemap.values
+for file on filemap.values
     file.applyfile
     
                 
@@ -187,7 +187,7 @@ instantdots.toml
 
 ```
 name = "catppuccin"
-author = personxyz
+author = person_xyz
 dots_dir = ./dots
 ```
 
