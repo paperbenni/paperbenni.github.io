@@ -20,12 +20,12 @@ Tabs used to live at the top, which admittedly is not a great place to reach on
 a phone which you hold in your hand. But they're more visible there, less likely
 to be covered by fingers. 
 This problem was solved by allowing users to swipe left and right to switch
-tabs. Every app used to have this. Youtube, the Clock app
+tabs. Every app used to have this. YouTube, the Clock app
 
 ## Notewise
 
 This is hands down the best app for note taking in terms of the actual pen
-engine. Suuuper fast, low latency, can take tons of vectors and I've never see
+engine. Super fast, low latency, can take tons of vectors and I've never seen
 it slow down even a little bit. It looks and feels great, modern, easy to use,
 minimal, with a lot of features. There's one problem though. Sometimes they just
 remove features. The features don't look like they're full of technical debt or

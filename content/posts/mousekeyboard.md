@@ -1,7 +1,7 @@
 ---
 date: '2025-08-12T19:40:11+02:00'
 draft: true
-title: 'The mouse is not stupid. Yes, I meant you, the nvim hyprland arch btw user'
+title: 'The mouse is not stupid. Yes, I meant you, the nvim Hyprland Arch BTW user'
 showToc: true
 ---
 
