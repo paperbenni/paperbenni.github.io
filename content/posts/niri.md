@@ -7,14 +7,14 @@ showToc: true
 
 # Niri
 
-I have recently come across [niri](https://github.com/YaLTeR/niri).
+I have recently come across [Niri](https://github.com/YaLTeR/niri).
 
 I do not know how I managed to miss that this is a thing for this long. 
 In my limited experience this is even better than Hyprland.
 
 # Overview hjkl
 
-The overview mode is amazing. It would be even amazinger if you could use hjkl
+The overview mode is amazing. It would be even more amazing if you could use hjkl
 vim navigation in addition to the arrow keys. This should be fairly simple
 
 # XWayland

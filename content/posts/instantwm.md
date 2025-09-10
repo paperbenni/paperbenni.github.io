@@ -16,7 +16,7 @@ No software ecosystem with utilities coming even close to what Xorg had.
 
 Some of these are still issues. Flameshot does not work by default on Wayland.
 It still complains after applying a few fixes. 
-Espanso is really hacky on wayland. Some features straight up do not work. 
+Espanso is really hacky on Wayland. Some features straight up do not work.
 
 Some things about it are broken by design, features that will never make it in
 there, but which some applications rely upon. These applications will stay on
@@ -144,7 +144,7 @@ pretty much all it has to offer and allows for quite massive changes to its
 behavior. From what I've seen it does
 There are a few drawbacks. I am not very familiar with C++ and will not be able
 to use Rust for this. Seeing as the project gets smaller in size by having
-access to what Hyprland can already do, putting up with CPP is not a big deal. 
+access to what Hyprland can already do, putting up with C++ is not a big deal.
 Hyprland also has animations which are way better than what instantWM ever had. 
 Dragging windows within a tiled layout is also really nice. 
 Given how much the plugin system allows I feel confident that I will be able to

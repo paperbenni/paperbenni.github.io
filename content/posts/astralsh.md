@@ -5,9 +5,9 @@ title: 'Astralsh'
 showToc: true
 ---
 
-Astral-sh tools prevented me from hating python
+Astral-sh tools prevented me from hating Python
 
-Why is pylance closed source? Why do both pylance and pyright exist?
+Why is Pylance closed source? Why do both Pylance and Pyright exist?
 And then there's basedpyright?
 
 

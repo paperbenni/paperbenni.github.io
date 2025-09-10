@@ -32,7 +32,7 @@ to change or delete the password. I manually changed the password back using the
 psql CLI inside the database container, and now everything is working again. 
 Running imperative commands on a database with Docker where everything is supposed
 to be declarative feels pretty dirty, and the fact that the DB can still get
-messed up is scary enough for immich not to be a good backup solution yet.
+messed up is scary enough for Immich not to be a good backup solution yet.
 
 The backup UI on the mobile app is either very unclear or very buggy. 
 I am not a fan of the header "Uploading file info." It sounds like it's just
@@ -58,7 +58,7 @@ that there are any files to upload either. It might even be better to show
 the amount of files which will be uploaded before starting the backup, or
 disable the "Start Backup" button if there are no files to upload.
 
-I am not saying the immich developers are incompetent, or that this is the most
+I am not saying the Immich developers are incompetent, or that this is the most
 horrible UI out there, but it does not make me trust it enough to use it for
 backing up my photos. The backup process is absolutely critical for a photo app.
 I can deal with occasional jank when viewing photos, as long as I can trust that

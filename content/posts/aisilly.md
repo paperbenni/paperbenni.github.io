@@ -5,7 +5,7 @@ title: 'Aisilly'
 showToc: true
 ---
 
-# AI agent make silly mistakes
+# AI agents make silly mistakes
 
 AI Agents have huge issues which are easy to solve, but which somehow nobody
 bothers to solve. 
@@ -24,32 +24,32 @@ it. is. going. through. the. IDE. first.
 YOU KNOW IT IS NOT GOING TO FIT. Or, in some cases even worse, it does fit. It
 fills 99% of the context. The LLM will output a dozen very expensive tokens,
 which will most likely be garbage, because its context is filled with 80%
-minified javascript and 10% useless information. 
+minified JavaScript and 10% useless information.
 
-A single google search being done like this can cost you a dollar. 
+A single Google search being done like this can cost you a dollar.
 
-Even firecrawl which is supposed to be used for AI does this. When looking up
-the docs for a rust crate, it somehow managed to ingest the entire commit
-history into GPT5-mini. 
+Even Firecrawl which is supposed to be used for AI does this. When looking up
+the docs for a Rust crate, it somehow managed to ingest the entire commit
+history into GPT-4o-mini.
 
-Opencode is especially bad with this. It happily runs google searches using
-a simple http fetch tool. Yes, that means tons of HTML/JS in the context. It
+Opencode is especially bad with this. It happily runs Google searches using
+a simple HTTP fetch tool. Yes, that means tons of HTML/JS in the context. It
 likes to fill its context 95% before even touching a file, and then crap out
 because of either context rot or because it manages to stumble across a website
 megabytes in size. 
 
 Zed also fetches entire HTML sites into context, but is not as aggressive with
-using google searches. 
+using Google searches.
 
 Roo code does have a fetch tool, but I have never seen it voluntarily access the
 internet. That's also a way to avoid the problem I guess. I've also seen it
 resort to curl with the bash tool.
 
 
-Claude code does this even weirder. It just doesn't have a search or fetch tool at all,
-instead it relies on the LLM api to already do searches on its own. If an
-'ordinary' LLM without server side tool use gets plugged into it via Claude Code
-router, it just doesn't do google searches. 
+Claude Code does this even weirder. It just doesn't have a search or fetch tool at all,
+instead it relies on the LLM API to already do searches on its own. If an
+'ordinary' LLM without server-side tool use gets plugged into it via Claude Code
+router, it just doesn't do Google searches.
 
 
 
@@ -73,7 +73,7 @@ In fact, these things are probably what is being used to create the data sets
 being used to train LLMs. Why not use them to make the result of tool calls more
 readable for LLMs as well?
 
-Again, firecrawl seems to come reasonably close to this ideal. It converts pages
+Again, Firecrawl seems to come reasonably close to this ideal. It converts pages
 to markdown. It even offers an Agent to do more complicated searches. That agent
 is currently not available in the firecrawl MCP as of now, and also seems
 overkill for most searches. I do not need cross referencing of multiple sources,
@@ -117,9 +117,9 @@ Codex just did this
 ```
 
 
-AI agents should not touch git. Ever. No. Dont do it. 
+AI agents should not touch git. Ever. No. Don't do it. 
 On startup, Codex detected that I was working in a git repo and asked me to auto
-approve file edits, as because I am working with git, I can undo anything it
+approve file edits, because I am working with git, I can undo anything it
 does. Then it just goes ahead and generates commits on its own. 
 
 

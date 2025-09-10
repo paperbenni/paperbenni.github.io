@@ -51,7 +51,7 @@ is on that gap, then the menu will also disappear. So make sure your mouse
 movement is precise, but also fast enough so that there is no frame where the
 cursor is on the gap. 
 
-Side note, all other menu entries in the navbar also have hove-over menus, but
+Side note, all other menu entries in the navbar also have hover-over menus, but
 do not have this problem. 
 
 Everywhere I look there's low hanging fruit of problems to fix. 

@@ -5,7 +5,7 @@ title: 'Instantarch_rewrite'
 showToc: true
 ---
 
-This is writtrn on my phone, really quick, 
+This is written on my phone, really quick,
 dirty thoughts
 
 
@@ -33,7 +33,7 @@ struct instantOSInstall {
 
 UserConfig = {
     username: string
-password strung
+password: string
 }
 
 
@@ -46,27 +46,27 @@ trait AskStep {
 
 
 
-struct AskSteoInfo {
+struct AskStepInfo {
     optional: bool
     AskStepType
 }
 
 enum Question {
     Input { default: Option<string> }
-    SelectMultuple { choices }
+    SelectMultiple { choices }
     SelectOne { choices }
     YesNo
 }
 
-struct QuestuonData {
-choices: map(QuestuonRype, data)
-answers: map(QurstuinType, answer)
+struct QuestionData {
+choices: map(QuestionType, data)
+answers: map(QuestionType, answer)
 }
 
 
 Enum QuestionType {
-    UserName(usernamequestion),
-    UsrrPassword(passwordquestion)
+    UserName(UserNameQuestion),
+    UserPassword(PasswordQuestion)
 }
 
 ```
@@ -78,13 +78,13 @@ Enum QuestionType {
 type StepId = string
 
 answerRegistry = Map<AnswerKind, Answer>
-ActiveQuestuons = [AnsswerKind]
-NocdeRegustry = [AnswerKind, Node]
+ActiveQuestions = [AnswerKind]
+NodeRegistry = [AnswerKind, Node]
 
 build_dependencies
-while get_unsatisfied(unsatifyed)
+while get_unsatisfied(unsatisfied)
     for step in step
-        if step.cinditions.active
+        if step.conditions.active
             if step.unanswered
                 return step
 
@@ -98,8 +98,8 @@ struct stepCondition
 
 goback()
     for answer in get_active()
-        if active[i+1] = currentstep
-            currentstep = axtice[i]
+        if active[i+1] == currentstep
+            currentstep = active[i]
 
 trait Leaf<data>
     data: data
@@ -116,23 +116,23 @@ enum leafkind
     
 askLeaf(leaf)
     match leafkind
-        yesno
+        YesNo
             data = gum ask
-        selectone
+        SelectOne
             data = gum choose get_choices
             verify
-        selectMultiple
+        SelectMultiple
             data = gum choose get_choices
             verify
 
 
 struct Step {
-    junction: Option vec<AskDependency>)
+    junction: Option<Vec<AskDependency>>,
     question: Option<Leaf(askstuff)>
 }
 
 
-struxt AskDependenxy {
+struct AskDependency {
     name: string
     dependencies: [dependency]
 }
@@ -143,10 +143,10 @@ partitionconfig depends on
 rootpartition
 bootloaderpartition
 
-fn get_unsatisfied(ActiveQuestions, NkdeRegistry)
-    sort activequestuins by leaf first, jinction sexond
-    for question in activequestions
-        if question unsatisfied
+fn get_unsatisfied(ActiveQuestions, NodeRegistry)
+    sort active_questions by leaf first, junction second
+    for question in active_questions
+        if question.unsatisfied
             return question
 
     
