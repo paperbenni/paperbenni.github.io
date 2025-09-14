@@ -29,6 +29,11 @@ Upgrading collections is not a thing. You need to reinstall all of them.
 
 
 
+Astral-sh tools prevented me from hating Python
+
+Why is Pylance closed source? Why do both Pylance and Pyright exist?
+And then there's basedpyright?
+
 
 
 
