@@ -1,7 +1,7 @@
 ---
 date: '2025-09-10T19:30:58+02:00'
 draft: true
-title: 'Archfonts'
+title: 'Fonts incident no Arch'
 showToc: true
 ---
 
