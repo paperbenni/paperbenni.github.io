@@ -41,13 +41,31 @@ use for a while. They're not meant for utilities following the unix philosophy,
 they're large and okay with 80% feature overlap with some other thing and 40%
 feature overlap with almost all other things. 
 
+Ironically, the fastest menu I have found on wayland is still dmenu, but because
+it runs through xwayland, there's still a noticeable delay, and all sorts of
+weird compositor specific issues, like the mouse having to be on the menu or the
+menu being placed in the middle of the screen. 
 
-New approach:
+# New approach
+
+I am giving up opening a new window and expecing it to be fast enough to not
+interrupt my typing. Instead, I will keep a window open and automatically show
+or hide it based on wether menu input is currently required. 
+
+An instance of the menu will run permanently in a scratchpad terminal. 
+Questions can be sent to that menu, which will then make the terminal visible,
+show the menu just like the normal CLI version would, and upon selection or
+cancellation, hide the terminal and send back the chosen item. 
+
+
+## Server
+
+### Here's weird wacky pseudocode
 
 ```
 - Server is running inside a terminal on the scratchpad, listens for menu requests
 - on request:
-    - show scratchpad
+    - show scratchpad terminal
     - open menu prompt
     - wait for menu selection
     - close menu prompt
@@ -56,5 +74,70 @@ New approach:
 ```
 
 
+### Currently open issues
+
+Since fzf can be given custom preview commands, this connection can be used to
+execute arbitrary commands. Nothing which doesn't have the same level of
+privilege as the server should be able to access it. This is a solved problem,
+Hyprland exec does the same thing, I just need to read up on how this is done
+and what sort of IPC is out there, and what Hyprland uses. 
+
+How can I deal with large inputs? If the menu receives tens of thousands of
+lines of input via stdin, the client also needs to get that to the server. 
+How can I do that in a way which is performant? Does that matter?
+
+What happens when the server dies?
+What happens when the scratchpad is closed or hidden by the user?
+The server should be able to detect that and send a cancelled or serverclosed
+message to the client. 
+
+## Scratchpad
+
+The server detects, which compositor or DE it is running on and adjusts the
+commands which are needed to show or hide the scratchpad accordingly. This is
+abstracted away so other parts of the server can just call some method to toggle
+the scratchpad. 
+
+### Sway
+
+Sway does not have named workspaces, so the way this could be implemented is to
+use some very high numbered workspace like 98. 
+
+I also need to look into creating window rules so the menu window spawns on the 
+right workspace.
+
+### Hyprland
+
+Hyprland has named workspaces called "special" workspaces, and can create window
+rules using the hyprctl command. 
+
+Set up a rule which spawns 'instantmenu' or class windows on the special workspace and also makes them centered. 
+Use the togglesomethingsomething command to toggle the scratchpad.
+
+
+## Client
+
+Check server existance, if server is not running, start a new server in the
+background. Then wait for existance (with a timeout), and then send the menu
+request. 
+
+A menu request should contain all the information needed to open the menu with
+the same options as when running the menu directly in the terminal. This means
+transmitting a list of items and options. The server should send back the item
+chosen (or that the user has cancelled the menu). It should wrap the same enum
+which is being used in the terminal version. The thing running in the server
+terminal should be as equivalent to the normal version as possible. 
+
+# Architecture
+
+I would like this to stay in the CLI, and have a subcommand called menuserver
+which opens up a scratchpad terminal which then runs the command `instant
+menus server --inside` or has some other way of detecting if it should spawn a
+scratchpad terminal or if it is running within the scratchpad terminal. 
+
+The `instant menu` command should then have an option called `--gui` or
+`--client` which then makes it send the menu request to the server instead of
+displaying the menu itself (and spawns the server in the background if it is not
+already running). 
 
 
