@@ -50,7 +50,7 @@ menu being placed in the middle of the screen.
 
 I am giving up opening a new window and expecing it to be fast enough to not
 interrupt my typing. Instead, I will keep a window open and automatically show
-or hide it based on wether menu input is currently required. 
+or hide it based on whether menu input is currently required. 
 
 An instance of the menu will run permanently in a scratchpad terminal. 
 Questions can be sent to that menu, which will then make the terminal visible,
@@ -117,8 +117,8 @@ Use the togglesomethingsomething command to toggle the scratchpad.
 
 ## Client
 
-Check server existance, if server is not running, start a new server in the
-background. Then wait for existance (with a timeout), and then send the menu
+Check server existence, if server is not running, start a new server in the
+background. Then wait for existence (with a timeout), and then send the menu
 request. 
 
 A menu request should contain all the information needed to open the menu with
