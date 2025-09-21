@@ -51,10 +51,21 @@ Can I use restic to view
 - what are the newest changes?
 - are they newer than the newest snapshot?
 
+# Features
+
+`instant game add`
+
+interactively prompt for
+- game name
+- path
+
+
 # Architecture
 
 All game saves are stored in a single restic repository.
 Probably doesn't need a password, game saves are not that sensitive. 
+
+
 
 List of games with universal metadata
 `~/.config/instant/games/games.toml`
