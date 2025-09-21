@@ -40,9 +40,22 @@ different devices and more.
 # Ideas
 
 Game saves as restic snapshots
-`instant game sync` command
+
+`instant game sync <game>` command
+
+For each game installation do the following:
+
+- Check when the game save was last modified locally
+- Check when the latest restic snapshot for the game was created
+- If the game save is newer, create a restic snapshot for the game
+- If the newest restic snapshot is newer, then restore the game save from the
+snapshot
 
 `instant game launch` command
+
+`instant game init` command
+
+prompt for restic repo to use and its password
 
 # Research
 
@@ -66,28 +79,38 @@ All game saves are stored in a single restic repository.
 Probably doesn't need a password, game saves are not that sensitive. 
 
 
+## Files
 
 List of games with universal metadata
 `~/.config/instant/games/games.toml`
 
 Device specific metadata, game can be installed or not, or installed in
-different locations.  
+different locations on different devices.
 `~/.config/instant/games/installations.toml`
 
+## Data
 ```
+
+struct GameName(String)
+
 Game {
-    name: string,
-    id: string,
+    name: GameName,
     probable_paths: string[],
-    
 }
 
 GameInstallation {
-    game_id: string
+    game_name: GameName,
     save_path: string
 }
 ```
 
 
+A game save is a restic snapshot tagged with `instantgame/<gameid>`
+
+
+## Wrappers
+
+Either use Rustic as library or wrap restic CLI
+- Restic more mature, probably use that
 
 
