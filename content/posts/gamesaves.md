@@ -56,11 +56,14 @@ snapshot
 
 `instant game launch` command
 
+1. sync game saves
+2. Launch game using provided launchcommand
 
 
 `instant game init` command
-
 prompt for restic repo to use and its password
+test out restic repo afterwards
+prompt for creating a new repo if none is found
 
 # Research
 
@@ -135,7 +138,8 @@ easily be done from CLI
 // go in installations.toml
 GameInstallation {
     game_name: GameName,
-    saves: HashMap<PathId, Path>,
+    saves: HashMap<PathId, Path>, // make sure tilde and env variables in the
+path are expanded when it is saved to the toml file
 }
 ```
 
