@@ -15,7 +15,10 @@ to sync.
 
 Regardless, I have spent a fair bit of time in some games, left them sitting for
 a year, only to find out that something has swallowed my save file or that it's
-on an old machine and has not synced over. 
+on an old machine and has not synced over. I have enough new games that I do not
+deem it worth my time to redo the beginning of a game multiple times, if I could
+instead be playing something I haven't done already, so unfortunately these
+games tend to rot in a pile of shame. 
 
 I also like to play emulated games, or use tools like umu-launcher, so the save
 file will not necessarily be in any folder steam expects or knows. 
@@ -53,6 +56,8 @@ snapshot
 
 `instant game launch` command
 
+
+
 `instant game init` command
 
 prompt for restic repo to use and its password
@@ -79,28 +84,58 @@ All game saves are stored in a single restic repository.
 Probably doesn't need a password, game saves are not that sensitive. 
 
 
-## Files
+## Config Files
 
-List of games with universal metadata
+### Games
+
+List of games with universal metadata. Can be checked into dofile managers and
+synced across devices.
 `~/.config/instant/games/games.toml`
 
-Device specific metadata, game can be installed or not, or installed in
-different locations on different devices.
+### Installations
+
+Device specific metadata. A game can be installed or not, or installed in
+different locations on different devices. This contains info about the
+installation of the game on this specific device. Do not check into dotfile
+managers or sync. 
 `~/.config/instant/games/installations.toml`
 
 ## Data
 ```
 
 struct GameName(String)
+struct PathId(String)
 
-Game {
-    name: GameName,
-    probable_paths: string[],
+struct InstantGameConfig {
+    repo: ResticRepository,
+    repo_password: Option<String>,
+    games: vec<Game>
 }
 
+struct SavePath {
+    id: PathId,
+    // example: this is the path where preferences are stored or 
+    // example: this is where the game saves are stored
+    description: String,
+}
+
+// go in games.toml
+Game {
+    name: GameName, //Unique identifier for a game
+    description: Option<String>,
+    // A game can have multiple paths which contain save data
+    // defaults to a single path named "saves"
+    // this is only an ID
+    save_paths: Option<vec<SavePath>>,
+    launch_command: Option<String>, // command to launch the game, if it can
+easily be done from CLI
+}
+
+// each game path needs to be mapped to an actual path
+// go in installations.toml
 GameInstallation {
     game_name: GameName,
-    save_path: string
+    saves: HashMap<PathId, Path>,
 }
 ```
 
@@ -108,9 +143,10 @@ GameInstallation {
 A game save is a restic snapshot tagged with `instantgame/<gameid>`
 
 
-## Wrappers
+## Libraries
 
-Either use Rustic as library or wrap restic CLI
-- Restic more mature, probably use that
+Use rustic_core to interact with restic
+Use fzf wrapper already in the project for menus
+use fzfselectable trait already in the project
 
 
