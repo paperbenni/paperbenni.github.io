@@ -54,32 +54,24 @@ For each game installation do the following:
 - If the newest restic snapshot is newer, then restore the game save from the
 snapshot
 
-`instant game launch` command
-
-1. sync game saves
-2. Launch game using provided launchcommand
-
-
-`instant game init` command
-prompt for restic repo to use and its password
-test out restic repo afterwards
-prompt for creating a new repo if none is found
-
-# Research
-
-Can I use restic to view
-- are there any changes?
-- what are the newest changes?
-- are they newer than the newest snapshot?
-
-# Features
-
 `instant game add`
 
 interactively prompt for
 - game name
 - path
 
+
+`instant game launch` command
+
+1. sync game saves
+2. Launch game using provided launchcommand
+
+
+`instant game init`
+
+prompt for restic repo to use and its password
+test out restic repo afterwards
+prompt for creating a new repo if none is found
 
 # Architecture
 
