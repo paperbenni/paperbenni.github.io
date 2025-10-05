@@ -1,9 +1,17 @@
 ---
 date: '2025-09-06T20:50:00Z'
-draft: true
+draft: false
 title: 'Instantcli Dotfiles'
 showToc: true
 ---
+
+# UPDATE
+
+This article is an early idea of what the tool could be. Since I wrote it, it
+has evolved and changed a lot. Stay tuned for more infos about the current
+version of the tool. 
+The tool has since been renamed to
+[ins](https://github.com/instantCLI/instantCLI)
 
 # Idea
 
