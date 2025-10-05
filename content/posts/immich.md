@@ -7,7 +7,6 @@ showToc: true
 
 # My thoughts on Immich
 
-
 Immich is amazing. It looks like Google Photos, it feels like Google Photos, and
 it's even faster. Google Photos tends to move infrequently accessed photos to really slow
 storage, so going through your timeline can be very slow. 
