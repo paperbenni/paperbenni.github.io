@@ -1,9 +1,17 @@
 ---
 date: '2025-09-21T12:52:40+02:00'
-draft: true
+draft: false
 title: 'A new game save system'
 showToc: true
 ---
+
+# UPDATE
+
+This article is an early idea of what the tool could be. Since I wrote it, it
+has evolved and changed a lot. Stay tuned for more infos about the current
+version of the tool. 
+The tool has since been renamed to
+[ins](https://github.com/instantCLI/instantCLI)
 
 # The problem
 
