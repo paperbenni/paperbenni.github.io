@@ -50,10 +50,22 @@ means that I need to plan ahead each time I update a package.
 
 ## What should it provide?
 
+I want to update packages through Git. I want to create a release with a tag,
+and it then should build the package, sign the package, rebuild the database and
+upload the package to the web server. 
 
+I also want to provide some AUR packages prebuilt. Adding and removing them
+should be as easy as adding the name of an AUR package to a list in a repo.
 
+I should be able to have programs in individual repos, but also be able to build
+multiple packages from a single repo. 
+
+Atomic updates. While updating or rebuilding or uploading, installing or
+updating instantOS should not be broken. 
 
 ## Brainstorming
+
+![architecture](./images/build_arch.svg)
 
 Build in DIND archlinux docker image
 
