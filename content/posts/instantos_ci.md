@@ -65,7 +65,7 @@ updating instantOS should not be broken.
 
 ## Brainstorming
 
-![architecture](./images/build_arch.svg)
+![architecture](/posts/images/build_arch.svg)
 
 Build in DIND archlinux docker image
 
