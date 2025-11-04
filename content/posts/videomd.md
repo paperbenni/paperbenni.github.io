@@ -65,7 +65,7 @@ Silences should also be inserted as
 ```
 
 Since maybe you would want to cut these out or keep parts of the video where
-there is no talking. Only silences longer than a second should get a SILCENCE
+there is no talking. Only silences longer than a second should get a SILENCE
 line, as shorter silences should just be left in. If a silence is longer than 5
 seconds it should be split into multiple SILENCE lines, that way I can remove
 part of the silence while keeping the rest.
@@ -137,7 +137,7 @@ edited out, remote videos embedded or linked to.
 
 I plan to develop this only once the basics are in place.
 
-I am a big fan of luasnips, so crating snippets for the extra instructions will
+I am a big fan of luasnips, so creating snippets for the extra instructions will
 speed up things massively. Refer to my neovim setup for how to do this, the
 latex snippets are a lifesaver for creating anki cards and taking notes, I would
 like the same for the extra instructions here. 
