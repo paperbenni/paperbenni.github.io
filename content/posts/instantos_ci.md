@@ -7,7 +7,7 @@ showToc: true
 
 # A CI system for instantOS
 
-The way packages are built as of now is very adhoc and means fixing issues with
+The way packages are built as of now is very ad-hoc and means fixing issues with
 packages and rebuilding them takes a long time. 
 
 # The current process
@@ -23,7 +23,7 @@ packages and rebuilding them takes a long time.
 ### Not very reproducible
 
 My dev machine is a machine I regularly mess with. It won't have malware on it,
-but maybe some env variables or troubleshooting steps impact the way packages
+but maybe some environment variables or troubleshooting steps impact the way packages
 are built. This means if my personal machine is in an odd state, I cannot build
 new packages, because I do not want to push messy stuff to my users. 
 
@@ -41,7 +41,7 @@ package and sign packages.
 
 Partial updates are hard using this approach. Because ansible always uploads the
 entire repo, I need to make sure all packages, even the ones I did not rebuild
-are present and valid and up to date. I usually am not sure, so I just rebuild
+are present and valid and up to date. I'm usually not sure, so I just rebuild
 the entire thing. This can take quite a while, and after leaving the machine for
 a while I still need to remember to run ansible to upload the changes. This also
 means that I need to plan ahead each time I update a package. 

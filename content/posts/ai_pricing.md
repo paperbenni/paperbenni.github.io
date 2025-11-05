@@ -18,7 +18,7 @@ remarkably well. We can check if the measurements are somewhat plausible, and if
 you are a CRUD company, cloud charges are peanuts anyway. The assumption always
 was that if a cloud provider was caught lying about resource utilization their
 reputation would be ruined, so there's a strong incentive to be honest.
-Or so we thought I guess. 
+Or so we thought, I guess. 
 
 I do not comprehend how what most AI companies do is even legal. 
 Shouldn't a purchase come with contractual obligations for the party I purchase

@@ -16,7 +16,7 @@ available to try on the AUR and crates.
 
 ```
 Cargo install ins
-````
+```
 
 # Improvement
 
@@ -31,7 +31,7 @@ it. The theme however contains a ghostty theme, so if I install the theme, my
 ghostty config will be overwritten. What are my options now?
 
 - I can not use the theme. Kind of defeats the purpose of the theme
-- I can backup my config file, install the theme and then overwrite some of the config files that the theme. But I will have to do this every time I update or change the theme 
+- I can backup my config file, install the theme and then overwrite some of the config files that the theme contains. But I will have to do this every time I update or change the theme 
 - I can fork the theme and do my own modifications to it. Not ideal either as it comes with a maintenance burden
 
 Turns out there is a better way:

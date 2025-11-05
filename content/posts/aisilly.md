@@ -16,10 +16,9 @@ bothers to solve.
 
 ## Problems
 
-You know the context size of your LLM. You know the size of the tool output.
-Before passing it to the LLM.
+You know the context size of your LLM. You know the size of the tool output before passing it to the LLM.
 
-it. is. going. through. the. IDE. first. 
+It is going through the IDE first. 
 
 YOU KNOW IT IS NOT GOING TO FIT. Or, in some cases even worse, it does fit. It
 fills 99% of the context. The LLM will output a dozen very expensive tokens,
@@ -69,7 +68,7 @@ Lastly: Good old web scraping techniques. An LLM looking for information is not
 going to need minified javascript. It is not going to need tracking URLs. It is
 not going to need links to stylesheets. It is not going to need most CSS
 classes. We've had better things than `curl | my_expensive_llm` for a while now.
-In fact, these things are probably what is being used to create the data sets
+In fact, these things are probably what is being used to create the datasets
 being used to train LLMs. Why not use them to make the result of tool calls more
 readable for LLMs as well?
 
@@ -91,7 +90,7 @@ You should be very selective about which parts of the codebase you put into the
 context. If what you ask of the LLM is not a complete refactor or rewrite, then
 it will need very specific parts of it. It will most likely start with listing
 the files in your project and opening the ones most likely to contain the code
-which needs modification or which relates to the feature request
+which needs modification or which relates to the feature request.
 
 
 

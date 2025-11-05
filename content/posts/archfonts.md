@@ -1,7 +1,7 @@
 ---
 date: '2025-09-10T19:30:58+02:00'
 draft: true
-title: 'Fonts incident no Arch'
+title: 'Font Incident on Arch'
 showToc: true
 ---
 
@@ -39,7 +39,7 @@ same issue.
 
 Eventually I found out that seemingly random characters made seemingly random
 programs freeze. Does not have to be nerd fonts or anything weird, can be a dash
-or a dollar sign. Firefox is mostly fine with some minor issues, Chrome has no issues, Sublime Merge is an
+or a dollar sign. Firefox is mostly fine with some minor issues, but Chrome has no issues, Sublime Merge is an
 instant crash, Kitty is fine if you do not render nerd fonts, ghostty crashes
 entirely, waybar is invisible, gnome-font-viewer does not start, nautilus
 however is fine. 

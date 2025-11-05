@@ -33,7 +33,7 @@ Personally I am very much sold on the idea.
 
 ### Tech stack
 
-Moviepy needs insane amounts of memory and is very slow, and necessitates
+Moviepy needs insane amounts of memory and is very slow, and requires
 reencoding. I am leaning towards writing this in rust and using the ffmpeg-next
 wrapper. 
 
@@ -44,8 +44,7 @@ Open issues:
 ### Transcribing
 
 I am leaning towards WhisperX and using uvx to simplify the insane installation
-process. Calculate the hash of the video before transcribing, then transcribe
-it. Save the transcription in a cache directory, along with the hash, so that
+process. Calculate the hash of the video before transcribing, then transcribe it. Save the transcription in a cache directory, along with the hash, so that
 when dealing with the same video twice, I can easily skip transcribing it and
 use the cached transcription. This can be a fast insecure hash, the only thing I
 do not want are accidental collisions. This probably outputs SRT files. 

@@ -36,7 +36,7 @@ than Wayland. Sue me. Wayland seems to be an ever moving target, people don't
 like to just use it, and instead rely on fairly heavy libraries to abstract it
 away. 
 
-All of these libraries are meant for applications which you open and and then
+All of these libraries are meant for applications which you open and then
 use for a while. They're not meant for utilities following the Unix philosophy,
 they're large and okay with 80% feature overlap with some other thing and 40%
 feature overlap with almost all other things. 
