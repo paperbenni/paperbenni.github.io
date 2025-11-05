@@ -4,16 +4,16 @@ aliases: []
 tags: []
 ---
 
-First puzzle is: door is closed and cannot be opened The solution is: Go to the
-left, find another obstacle which cannot be overcome. Then go to the right
-again, and the door which previously could not be opnened cannot be opened. 
+The first puzzle is: the door is closed and cannot be opened. The solution is: Go to the
+left, find another obstacle that cannot be overcome. Then go to the right
+again, and the door which previously could not be opened cannot be opened. 
 
 You haven't gained a key or any ability to open the door, or you haven't
 triggered any mechanism which could open the door. The logical thing to assume
 is that until any of these things have happened, there's no use in checking the
 door again. 
 
-There's no problem solving to this.  It just can magically be opened because you
+There's no problem solving to this. It just can magically be opened because you
 went to the left. You get taught very early on that thinking will not get you
 anywhere, sometimes the answer is to just try random shit which solves your
 problems in a way you will not understand.

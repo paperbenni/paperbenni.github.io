@@ -28,16 +28,16 @@ about, but to me it seems plausible. I have considered writing my own wayland
 compositor, so I've read a few things about wayland, but I have barely scratched
 the surface, and it was enough to understand I don't have the time to do that. 
 
-As far as I can tell, wayland is more complex than Xorg for the end user. I know
+As far as I can tell, Wayland is more complex than Xorg for the end user. I know
 that Xorg was spaghetti, but it was spaghetti which was developed at a time when
 hardware was limited, applications were more basic under the hood, and memory
 and storage usage mattered. The end result when it worked was simpler to use
-than wayland. Sue me. Wayland seems to be an ever moving target, people don't
+than Wayland. Sue me. Wayland seems to be an ever moving target, people don't
 like to just use it, and instead rely on fairly heavy libraries to abstract it
 away. 
 
 All of these libraries are meant for applications which you open and and then
-use for a while. They're not meant for utilities following the unix philosophy,
+use for a while. They're not meant for utilities following the Unix philosophy,
 they're large and okay with 80% feature overlap with some other thing and 40%
 feature overlap with almost all other things. 
 
@@ -48,7 +48,7 @@ menu being placed in the middle of the screen.
 
 # New approach
 
-I am giving up opening a new window and expecing it to be fast enough to not
+I am giving up opening a new window and expecting it to be fast enough to not
 interrupt my typing. Instead, I will keep a window open and automatically show
 or hide it based on whether menu input is currently required. 
 

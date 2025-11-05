@@ -23,10 +23,10 @@ Or so we thought I guess.
 I do not comprehend how what most AI companies do is even legal. 
 Shouldn't a purchase come with contractual obligations for the party I purchase
 something from? Isn't that the entire basis of the service industry?
-The way it is right now is "you can give me money to purchase a nebolous
+The way it is right now is "you can give me money to purchase a nebulous
 *something*, I will maybe tell you after the fact what it is, or I will not and
 you can guess, and even if you guess correctly once, I might halve my services
-at some point without telling you". 
+at some point without telling you." 
 
 If we set a precedent that a big company can get away with slashing their
 services by 50% without telling anyone, then that will have bad consequences for

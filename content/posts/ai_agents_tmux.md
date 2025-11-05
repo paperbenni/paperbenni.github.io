@@ -7,8 +7,7 @@ showToc: true
 
 AI agents should run their commands in a tmux session. Claude code and most
 other agents are horrible at running commands. It will run something requiring
-user input and then get stuck. It may open a vim session or fzf or a dialog and
-it cannot deal with that. 
+user input and then get stuck. It may open a vim session, fzf, or a dialog, and it cannot deal with that. 
 
 I get that the problem sounds hard to solve, the easy way to implement terminal
 commands is to do the following:
@@ -18,9 +17,9 @@ commands is to do the following:
 3. Wait for the command to finish
 4. Feed the LLM the output and exit code of the command
 
-The important part ist that the LLM is not running while the command is running.
+The important part is that the LLM is not running while the command is running.
 If the command requires input to terminate, then there is nothing to provide that
-input and the command never terminates. The LLM enver wakes up again, and the
+input and the command never terminates. The LLM never wakes up again, and the
 entire agent loop is stuck. 
 
 Another key factor is that LLMs do not support streaming input. They take the
