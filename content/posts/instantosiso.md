@@ -8,7 +8,7 @@ showToc: true
 # Fixing the instantOS iso
 
 The last instantOS iso was created a while back. I've learned a few things since
-then, so here is my take no the updated plan to rework the instanOS iso build
+then, so here is my take on the updated plan to rework the instantOS iso build
 system. 
 
 Problems right now

@@ -23,7 +23,7 @@ packages and rebuilding them takes a long time.
 ### Not very reproducible
 
 My dev machine is a machine I regularly mess with. It won't have malware on it,
-but maybe some env variables or troubleshooting steps impacts the way packages
+but maybe some env variables or troubleshooting steps impact the way packages
 are built. This means if my personal machine is in an odd state, I cannot build
 new packages, because I do not want to push messy stuff to my users. 
 
@@ -69,7 +69,7 @@ updating instantOS should not be broken.
 
 Build in DIND archlinux docker image
 
-Wow to get onto web server?
+How to get onto web server?
 When to rebuild database?
 Sign packages?
 

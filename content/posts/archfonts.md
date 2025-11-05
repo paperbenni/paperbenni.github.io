@@ -58,7 +58,7 @@ the basics are working before pushing out the update?
 About an hour into a frantic troubleshooting session, I checked for updates
 again, and found two updates: freetype2 and the 32 bit version of it. 
 
-I install them, and all the proglems are gone. All of them. 
+I install them, and all the problems are gone. All of them. 
 
 HOW?? WHY??
 

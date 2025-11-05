@@ -19,7 +19,7 @@ format that is both human and machine readable.
 Now I can read the entire video in text form. 
 
 After making edits to the markdown file, the program can edit the video itself
-according to the edits I did to the markdown file. 
+according to the edits I made to the markdown file. 
 
 The most basic of these is cutting out a section of the video. 
 If I remove an entire line from the markdown file, the program can recognize
@@ -146,5 +146,5 @@ For inserting other video clips as b-roll, you might want to get specific
 timestamps interactively. The way I plan to do this is open the videos in mpv
 and use custom lua scripting to copy special video instructions to the clipboard.
 For example, you could set loop markers in mpv, then press a hotkey to copy an
-instruction to insert the marked section of the video into the `video.md` video
+instruction to insert the marked section of the video into the `video.md` file
 

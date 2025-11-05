@@ -31,7 +31,7 @@ it. The theme however contains a ghostty theme, so if I install the theme, my
 ghostty config will be overwritten. What are my options now?
 
 - I can not use the theme. Kind of defeats the purpose of the theme
-- I can backup my config file, install the theme and then overwrite some of the config files the the theme. But I will have to do this every time I update or change the theme 
+- I can backup my config file, install the theme and then overwrite some of the config files that the theme. But I will have to do this every time I update or change the theme 
 - I can fork the theme and do my own modifications to it. Not ideal either as it comes with a maintenance burden
 
 Turns out there is a better way:
@@ -64,11 +64,11 @@ relative to the theme folder.
 ## Improvement 3. Combine themes 
 
 What if two different themes theme different applications? I could install both
-and constantly switch between them, but that's kid of a hack. 
+and constantly switch between them, but that's kind of a hack. 
 
 ## Improvement 4. Easier theme development
 
-The `ins` cli Tool Comes with helpers to develop and test themes. These don't
+The `ins` CLI tool comes with helpers to develop and test themes. These don't
 really do anything special, but they are super convenient and make the boring
 parts of theme development a lot faster.
 

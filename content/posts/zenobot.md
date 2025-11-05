@@ -53,7 +53,7 @@ between them, building a knowledge graph.
 
 ## Gardening workflow
 
-The gardening workflow should be triggered once a day, preferrably at midnight. 
+The gardening workflow should be triggered once a day, preferably at midnight. 
 
 
 # Schema
@@ -103,7 +103,7 @@ Memory Content
 User interfacing agents can ask the gardening agents for context. 
 The gardening agents can do their thing and then answer this with either
 
-"Placed the relevant memories in relevant"
+"Place the relevant memories in relevant"
 or
 "No memories found which contain the needed information"
 
@@ -308,7 +308,7 @@ Tools
 
 Maintain the list of currently relevant memories
 These get fed as context to all user interfacing agents. 
-Examples of what this 
+Examples of what this agent does: 
 
 ### Context
 - Recent Conversation Messages
