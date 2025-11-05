@@ -1,8 +1,10 @@
 ---
-id: metroid_zero_mission
-aliases: []
-tags: []
+date: '2025-11-05T12:57:09+01:00'
+draft: true
+title: 'Metroid is Stupid'
+showToc: true
 ---
+
 
 The first puzzle is: the door is closed and cannot be opened. The solution is: Go to the
 left, find another obstacle that cannot be overcome. Then go to the right
