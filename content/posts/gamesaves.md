@@ -32,8 +32,8 @@ I also like to play emulated games, or use tools like umu-launcher, so the save
 file will not necessarily be in any folder steam expects or knows. 
 
 I have tried Ludusavi, but it's very poorly documented, very slow, and partially
-very janky. Apart from custom game paths, it also does really care about
-emulated games. I also like to keep games self contained. Separate folder with
+very janky. Apart from custom game paths, it also doesn't really care about
+emulated games. I also like to keep games self-contained. Separate folder with
 dependencies, wine prefix etc. Ludusavi doesn't really like that. 
 
 # The solution

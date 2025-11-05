@@ -33,7 +33,7 @@ any other common messaging app, whatsapp, imessage, google messages, telegram,
 and if you're not interested in technology, then the idea of it being different
 will not even occur to you.
 
-Signal needs to appeal to tech illiterate people. the value of a messenger lies in
+Signal needs to appeal to tech illiterate people. The value of a messenger lies in
 how many people you are able to reach. Few people use WhatsApp because of its
 innovative features or because they like Facebook and training its LLMs. They
 use it because their family and friends use it, and they also only use it
@@ -48,7 +48,7 @@ proprietary messengers.
 
 # Android Tablets
 
-How is there no compantion app for Android? WhatsApp has one, there's one for
+How is there no companion app for Android? WhatsApp has one, there's one for
 iPadOS, Windows, Linux and MacOS. Android tablets get the full version of
 Signal, which might be nice to have as an option, but since that requires
 logging out of Signal on my phone, it's not an option for me and I would guess
@@ -85,7 +85,7 @@ they need to be, and that it will notify you if there are messages. The fact
 that discord calls still do not make your phone ring proves that this is not a
 trivial problem to solve. 
 
-It has less downtime that WhatsApp. In fact, I have never seen it go down for a
+It has less downtime than WhatsApp. In fact, I have never seen it go down for a
 noticeable amount of time. Not being tied to a company whose motto includes
 'move fast and break things' is a huge plus for a pretty basic tool. 
 

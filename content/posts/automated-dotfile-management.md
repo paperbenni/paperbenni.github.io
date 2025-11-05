@@ -124,7 +124,7 @@ destination
 TODO: Look up
 - What happens in stow if a file already exists?
 - What happens if a symlink already exists? Can we override it?
-EDIT: it can't, stow is not viable
+Edit: it can't, stow is not viable
 
 Side note, files can easily be reset by deleting them and running stow again
 
@@ -200,7 +200,7 @@ ideas for implementation
 maybe don't use yadm at all
 TODO for looking up
 - git worktrees
-- how does yadm work
+- How does yadm work
 - ignore all by default? How does yadm do that?
 - use bash?
 - use libgit2?

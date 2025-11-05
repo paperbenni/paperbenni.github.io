@@ -8,7 +8,7 @@ showToc: true
 # UPDATE
 
 This article is an early idea of what the tool could be. Since I wrote it, it
-has evolved and changed a lot. Stay tuned for more infos about the current
+has evolved and changed a lot. Stay tuned for more information about the current
 version of the tool. 
 The tool has since been renamed to
 [ins](https://github.com/instantCLI/instantCLI)
@@ -24,7 +24,7 @@ I wrote about ideas for dotfile management a while back.
 I thought about it some more. I am abandoning the "home dir as git worktree"
 approach. It's just not flexible enough.
 
-What follows is incomprehensible pseudocode for the new solution
+What follows is preliminary pseudocode for the new solution
 
 # Overlaying repos
 
@@ -82,7 +82,7 @@ impl dotfile {
             return true
         if self.source is newer than the target
             return true
-        current_hash = self.get
+        current_hash = self.get_hash()
     }
 
     fn is_modified(self) -> bool {
@@ -113,7 +113,7 @@ impl dotfile {
     
     fn get_source_hash() {
         // similar to target_hash, but hash should be inserted into
-valid_hashes. Slightly less lazy
+valid_hashes. Slightly less lazy.
     }
     fn apply {
         if self.is_modified()
@@ -125,7 +125,7 @@ valid_hashes. Slightly less lazy
     }
 
     fn fetch {
-        if self.modified or self.current_hash != self.targethash
+        if self.modified or self.current_hash != self.target_hash
             cp self.target_path self.source_file
     }
 }

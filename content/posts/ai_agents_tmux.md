@@ -7,7 +7,7 @@ showToc: true
 
 AI agents should run their commands in a tmux session. Claude code and most
 other agents are horrible at running commands. It will run something requiring
-user input and then get stuck. It may open a vim session, fzf, or a dialog, and it cannot deal with that. 
+user input and then get stuck. It may open a Vim session, fzf, or a dialog, and it cannot deal with that. 
 
 I get that the problem sounds hard to solve, the easy way to implement terminal
 commands is to do the following:

@@ -29,5 +29,5 @@ engine. Super fast, low latency, can take tons of vectors and I've never seen
 it slow down even a little bit. It looks and feels great, modern, easy to use,
 minimal, with a lot of features. There's one problem though. Sometimes they just
 remove features. The features don't look like they're full of technical debt or
-taking up space in the UI. They're just gone one day
+taking up space in the UI. They're just gone one day.
 

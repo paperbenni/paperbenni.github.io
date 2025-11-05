@@ -76,7 +76,7 @@ Is this becoming a Star Citizen-like project? Do not get me wrong, I find Star
 Citizen to be very impressive, but it's not a game I would ever play besides
 going "huh, that's nice", and likewise, immich is impressive, but I want it to
 become more than impressive. I want it to become a part of my day to day life I
-do not have to think about. I want it to be just "my photos", not a cool piece
+do not have to think about it. I want it to be just "my photos", not a cool piece
 of technology I can and have to fiddle around with, only to still get an
 experience that is great in some ways but very subpar in others. 
 

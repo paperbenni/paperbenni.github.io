@@ -61,7 +61,7 @@ think that instantWM is particularly hard to learn or that it takes a long time.
 
 A good example of this approach is resizing windows. GNOME and all traditional
 desktop environments place small hitboxes around a window that when clicked and
-dragged start the resizing process. Hypland does not have these and instead
+dragged start the resizing process. Hyprland does not have these and instead
 requires you to hold down a key on your keyboard, and the entire window becomes
 the hitbox for resizing. 
 
@@ -141,7 +141,7 @@ well supported. DHH also started a product called
 instantOS in idea and execution. 
 The important part is that Hyprland has a plugin system which allows access to
 pretty much all it has to offer and allows for quite massive changes to its
-behavior. From what I've seen it does
+behavior. From what I've seen, it does
 There are a few drawbacks. I am not very familiar with C++ and will not be able
 to use Rust for this. Seeing as the project gets smaller in size by having
 access to what Hyprland can already do, putting up with C++ is not a big deal.

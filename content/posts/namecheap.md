@@ -87,7 +87,7 @@ There is no way to export them either.
 
 # The API is horrible
 
-It returns XML. Its documentation is does not have a search feature. There is no
+It returns XML. Its documentation does not have a search feature. There is no
 API Method to add a single entry. You have to override all entries every single
 time. 
 

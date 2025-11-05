@@ -16,7 +16,7 @@ KiloCode and Roo Code made it seem like Cline is basically Debian, very
 conservative and purposefully behind in terms of features. 
 
 From my experience that doesn't seem to be the case. Cline has the most or most
-competend developers behind it compared to the other VS Code coders, and being
+competent developers behind it compared to the other VS Code coders, and being
 mostly upstream from them has some features earlier or plain better than the
 others. 
 

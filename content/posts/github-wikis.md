@@ -7,7 +7,6 @@ showToc: true
 
 I struggle to come up with a single thing that GitHub wikis do better than
 MkDocs Material or VitePress.
-Why are they being kept in a separate repo?
 Why are they kept in a separate repository?
 Why does that repository reinvent the wheel by providing some of the web UI features that
 normal source code repositories have, but in a worse way?
