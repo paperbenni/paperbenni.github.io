@@ -1,6 +1,6 @@
 ---
 date: '2025-09-15T16:53:18+02:00'
-draft: true
+draft: false
 title: 'There is no replacement for dmenu'
 showToc: true
 ---
@@ -141,3 +141,7 @@ displaying the menu itself (and spawns the server in the background if it is not
 already running). 
 
 
+# Update
+
+This has now been mostly implemented in the instant CLI as the `ins menu`
+command, more documentation is coming soon. 
