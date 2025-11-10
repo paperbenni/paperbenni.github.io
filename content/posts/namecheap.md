@@ -1,6 +1,6 @@
 ---
 date: '2025-08-14T14:51:28+02:00'
-draft: true
+draft: false
 title: 'Namecheap is horrible'
 showToc: true
 ---
@@ -26,11 +26,11 @@ domain for. No paging.
 The functionality is different depending on your screen width. That's right, the
 website is sort of responsive. But instead of reordering, and resizing the
 components to fit the screen, they also arbitrarily add or remove functionality
-when resizing the browser window. Some buttons are hidden entirely when you
-shrink your screen, some only appear on narrow screens. It's like they let
-different teams create the different variants of their components. 
-Or most likely different interns who they fired years ago, as the web UI has not
-changed in years. 
+when resizing the browser window. Some buttons or fields are hidden entirely
+when you shrink your screen, some only appear on narrow screens. It's like they
+let different teams create the different variants of their components. Or most
+likely different interns who they fired years ago, as the web UI has not changed
+in ages. 
 
 The login screen is unable to remember my username. Probably missing metadata. 
 The password manager does recognize the password field, but I need to retype the
@@ -38,7 +38,7 @@ username every single time.
 
 Their input validation is client side and also wrong. I tried setting up
 stalwart, which is an email server which gives you a list of entries to put into
-your DNS. 
+your DNS, and it refuses them, I override heir validation and it works just fine.
 
 The notifications menu only appears upon hovering over the envelope icon in the
 top right. It also disappears as soon as you move your cursor off the envelope
@@ -54,18 +54,19 @@ cursor is on the gap.
 Side note, all other menu entries in the navbar also have hover-over menus, but
 do not have this problem. 
 
-Everywhere I look there's low hanging fruit of problems to fix. 
+Everywhere I look there's low hanging fruit for problems to fix. 
 
 Scrolling down to the footer makes the sidebar flicker and rapidly move up and
 down. 
 
-They use images for icons. As in a rasterized image format. 
+They use images for icons. Images as in a rasterized image format. 
 
 The arrow in their breadcrumbs component is not aligned properly, and also too
 small. 
 
 Code blocks in their API docs have vertical misalignment and use multiple font
-sizes for some reason. Syntax highlighting on links is also broken. 
+sizes within the same code block for some reason. Syntax highlighting on links
+is also broken. 
 
 
 # They think you're smart but stupid
@@ -90,5 +91,12 @@ There is no way to export them either.
 It returns XML. Its documentation does not have a search feature. There is no
 API Method to add a single entry. You have to override all entries every single
 time. 
+
+
+# Conclusion
+
+I hope this was entertaining to read and loses them money (or gets them off
+their asses to fix their shit, all of it is low hanging fruit and yet they can't
+be bothered)
 
 
