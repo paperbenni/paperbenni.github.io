@@ -98,7 +98,7 @@ then the version an automated merge tool will produce will have old unused keys
 next to the new keys.
 
 There are plenty of users of Arch-based distros who do not know about this and
-just end up using really old version of config files with newer versions of the
+just end up using really old versions of config files with newer versions of the
 program they configure.
 
 I do not know what the best solution to this problem is, but the way it is

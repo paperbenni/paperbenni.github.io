@@ -55,7 +55,7 @@ Logs, systemd journal, a debugger. Which brings me to the developers of the
 crashing programs. I don't think even they use core dumps that often. They too
 will probably use logs and debuggers first. And if the program is written in an
 interpreted language, then the developers might not even know what a coredump
-is. Node and Electron have both managed to produce gianormous coredumps for me,
+is. Node and Electron have both managed to produce gigantic coredumps for me,
 and yes, it probably shouldn't be possible to write JavaScript which gets these
 to segfault, but if it does happen, then I WILL NOT TRY TO DECIPHER THE MEMORY
 OF FUCKING CHROMIUM. I might send the problematic JavaScript to the
@@ -64,7 +64,7 @@ but are you honestly telling me that the average user wants to, let alone is
 able to wade through gigabytes of memory dumps because they want to fix their
 JavaScript code? Or because their unfinished buggy AAAA Game crashed?
 
-If you knwo what core dumps are and are capable of using them, then you are
+If you know what core dumps are and are capable of using them, then you are
 probably also able to enable them, but for the majority of users and use cases,
 they should be disabled by default.
 
