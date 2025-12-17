@@ -47,11 +47,11 @@ support scratchpads.
 
 # Architecture
 
-The data sctructures for definining different assists in instantASSIST should be
+The data structures for defining different assists in instantASSIST should be
 serializable to a Sway config file, which can be included into the main config. 
 
 I should come up with maybe a builder pattern or a registry for creating new
 assists. In a similar way to how `ins settings` entries work, there can be
-requirements registerd, which need to be met in order for the assist to be
+requirements registered, which need to be met in order for the assist to be
 executed. 
 

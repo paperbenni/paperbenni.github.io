@@ -38,7 +38,7 @@ username every single time.
 
 Their input validation is client side and also wrong. I tried setting up
 stalwart, which is an email server which gives you a list of entries to put into
-your DNS, and it refuses them, I override heir validation and it works just fine.
+your DNS, and it refuses them, I override their validation and it works just fine.
 
 The notifications menu only appears upon hovering over the envelope icon in the
 top right. It also disappears as soon as you move your cursor off the envelope
@@ -95,7 +95,7 @@ time.
 
 # Conclusion
 
-I hope this was entertaining to read and loses them money (or gets them off
+I hope this was entertaining to read and lose them money (or gets them off
 their asses to fix their shit, all of it is low hanging fruit and yet they can't
 be bothered)
 

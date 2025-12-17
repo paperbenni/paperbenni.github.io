@@ -29,7 +29,7 @@ cannot go without.
 
 Tech-illiterate users might be wondering why the images which someone sent to
 them are not showing up in their photos app. This is the default behavior for
-any other common messaging app, whatsapp, imessage, google messages, telegram,
+any other common messaging app, WhatsApp, iMessage, Google Messages, Telegram,
 and if you're not interested in technology, then the idea of it being different
 will not even occur to you.
 
