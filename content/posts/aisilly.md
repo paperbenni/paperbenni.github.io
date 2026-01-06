@@ -5,11 +5,17 @@ title: 'Aisilly'
 showToc: true
 ---
 
+# Edit
+
+Since I began writing this article (2025-08-18T11:27:39+02:00), some of these
+problems have been solved, others have not. I still think it's an interesting
+time capsule, of the amount of problems which take a day to solve but nobody
+bothered with during the early days of AI coding agents. 
+
 # AI agents make silly mistakes
 
 AI Agents have huge issues which are easy to solve, but which somehow nobody
 bothers to solve. 
-
 
 
 # Search tool calls
@@ -92,12 +98,39 @@ it will need very specific parts of it. It will most likely start with listing
 the files in your project and opening the ones most likely to contain the code
 which needs modification or which relates to the feature request.
 
+If while reading the code, the agent comes upon a function it does not know, it
+has a few different options: 
 
-
+If it has some of the file tree in its context it can guess which file the
+function is defined in and then read that file. 
 
 ## Solutions
 
-LSP
+LSP. Plain and simple. 
+Since I started writing this article, there have been a few attempts to solve
+this. 
+Classical RAG with embeddings has mostly failed. This approach has mostly been
+outperformed by grep, along with the model guessing what it needs to read or
+grep next. 
+The other, more present approach is exploration sub-agents. The coding agent
+prompts another agent with 'find me the definition of function X' or 'summarize
+the architecture of XY system'. This works very well, but the sub-agent itself
+uses the grep-and-pray approach. 
+What I truly don't get is why nobody is giving LLMs access to LSP servers. 
+This is not something which has been tried and outperformed by grep yet again,
+it simply has not been tried as far as I can tell. Claude Code has added very
+basic LSP integration in late 2025. The idea was there the entire time, and
+considering how much Anthripic boasts about having an 'AI dev they can trust'
+which works at superhuman speed, this simple feature took ages to appear. 
+Anthropic developers at time appear worse than vibe coders, or there are depths
+of just letting the AI do its thing, however silly, which I have yet to witness. 
+In a nutshell: When Claude Code opens a file, it starts an appropriate LSP
+server. When it edits a file, it queries the LSP server for new diagnostics, and
+if after the edit, there are any, it inserts that into the prompt the next step,
+so the LLM can fix its mistakes. Unless I deeply misunderstand something here, I
+do not see why this was not basically a launch feature of Claude Code. Zed had
+this back when its agent launched. 
+
 
 # Git
 
