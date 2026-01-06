@@ -1,9 +1,18 @@
 ---
 date: '2025-08-30T14:14:32Z'
-draft: true
+draft: false
 title: 'Instantarch_rewrite'
 showToc: true
 ---
+
+## Edit
+
+This is an early draft of what the new `ins arch` instantOS installer actually
+became. The new installer works a bit different but is inspired by this scribble
+I did on my phone. 
+
+
+## Post
 
 This is written on my phone, really quick,
 dirty thoughts
