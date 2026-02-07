@@ -5,6 +5,22 @@ title: 'Openclaw'
 showToc: true
 ---
 
+
+# Wishlist
+
+Let me see a list of skills from Telegram commands. `/skill` does autocomplte,
+but only the command name, not the skill name . I would love a `/skill list` or
+just `/skills` which lists the skills with their descriptions. `/model` also has
+an amazing menu way of browsing models, browsing skills in this way would be
+really nice. Maybe you could even access clawdhub or whatever it's called
+nowadays from the Telegram interface. 
+
+
+
+
+
+
+
 How do updates to the AGENT.md and so on work?
 
 
