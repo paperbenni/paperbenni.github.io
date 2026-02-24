@@ -9,6 +9,9 @@ params:
   env: production
   defaultTheme: dark
   comments: true
+  author:
+    name: paperbenni
+    email: paperbenni@gmail.com
   homeInfoParams:
     Title: paperbenni
     Content: >-
