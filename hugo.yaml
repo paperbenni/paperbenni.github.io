@@ -3,6 +3,11 @@ languageCode: en-us
 title: Paperbenni
 theme: PaperMod
 
+markup:
+  goldmark:
+    extensions:
+      footnote: true
+
 searchHidden: false
 
 params:
