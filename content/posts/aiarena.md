@@ -1,7 +1,7 @@
 ---
 date: '2026-02-04T14:03:51+01:00'
 draft: false
-title: 'Aiarena'
+title: "Stop wasting other people's money on AI Arena"
 showToc: true
 ---
 
@@ -141,6 +141,10 @@ of models decline further and further, and we might have gone too far in the
 other direction from Llama 4. 
 
 Most models nowadays put out acceptable tool calls and very recognizable
-non-sensical prose inbetween those. Maybe this is a good thing, I'd rather have
+non-sensical prose inbetween those [^1]. Maybe this is a good thing, I'd rather have
 them do work than try to be my friend. I don't know why this section is here.
 Just food for thought I guess. 
+
+[^1]: "Now I have a complete picture" after every file read, "Aha! I have found
+    the issue!" after every other file read even if it understands nothing yet
+    and proceeds to do 10 more file reads after that. Plus loads of others. 

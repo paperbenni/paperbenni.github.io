@@ -3,12 +3,20 @@ languageCode: en-us
 title: Paperbenni
 theme: PaperMod
 
+markup:
+  goldmark:
+    extensions:
+      footnote: true
+
 searchHidden: false
 
 params:
   env: production
   defaultTheme: dark
   comments: true
+  author:
+    name: paperbenni
+    email: paperbenni@gmail.com
   homeInfoParams:
     Title: paperbenni
     Content: >-
