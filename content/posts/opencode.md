@@ -5,7 +5,16 @@ title: 'Opencode'
 showToc: true
 ---
 
-Loop of invalid edits
-- Tell agent to reread the file upon multiple edit failures
+
+Wishlist
+edit queue after submitting
+delete messages from queue
+
+
+disable/enable MCP servers in UI
+configure plugins in UI
+
+
+
 
 

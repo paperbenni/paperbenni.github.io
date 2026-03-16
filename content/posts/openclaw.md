@@ -1,6 +1,6 @@
 ---
 date: '2026-02-07T14:48:21+01:00'
-draft: true
+draft: false
 title: 'Openclaw'
 showToc: true
 ---
@@ -109,6 +109,9 @@ of reasoning tokens on second guessing and result in worse outcomes.
 The solution in my opinion is to keep only data-like or preference like
 information in config files, and expand the capabilities of the harness instead. 
 
-
+Do not introduce any features which confuse the agent if they are not used with
+programming-like prompts. Programs can have bugs, and if I program in a
+non-deterministic language on top of 400k lines of typescript slop, then I will
+have even more bugs. 
 
 
