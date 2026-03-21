@@ -21,10 +21,10 @@ player the ability to view things from different angles, leave an area and then
 come back much later and a lot more. 
 
 DLSS 5 can change facial features, textures, lighting, colors, and regardless of
-wether or not you think that looks good (I mostly do not think it does yet, but
+whether or not you think that looks good (I mostly do not think it does yet, but
 it has the potential to), it doesn't matter if it does or ever will. It looks
 meaningfully different from the original. What happens if a character walks off
-screen and then comes back? DLSS 5 only has access to the a few frames and
+screen and then comes back? DLSS 5 only has access to a few frames and
 motion vectors, it has no memory of the character once they have been off-screen
 for a few seconds. Even if it did, how about a character which has been
 off-screen for minutes or hours? Every time that happens, DLSS 5 will take a
@@ -51,9 +51,9 @@ You had to be careful how and when to use screen-space reflections in order for
 the artifacting to not be too visible, and with ray-tracing the artifacting
 doesn't really exist, apart from a bit of noise. 
 
-DLSS 5 is a screenspace effect for literally everything, it has no spacial
+DLSS 5 is a screenspace effect for literally everything, it has no spatial
 awareness. What happens if I look at something which is clearly a colored light
-source, and then gradually look away from it? My guess it DLSS 5 will put
+source, and then gradually look away from it? My guess is DLSS 5 will put
 colored lighting on things, and even if the light source goes off screen, the
 colored lighting being in the last few frames will mean that it will deduce that the
 next picture will also have the colored lighting. What if I entirely turn away
@@ -67,7 +67,7 @@ DLSS 5 to know that, it would have to have access to engine specific metadata.
 Will it try to find a middle ground and just fade out any light source no longer
 on screen? What happens when it completely guesses where light should come from
 because no light source is on screen, only for the sun to become visible and
-reveal it was completely wrong. Will it then fade towards a more appropiate
+reveal it was completely wrong. Will it then fade towards a more appropriate
 light setup or will it snap to something more appropriate, leaving us with a
 jarring transition? Both approaches can go horribly wrong. Any fading will mean
 ghosting. What happens if a light source gets occluded, what happens when I
