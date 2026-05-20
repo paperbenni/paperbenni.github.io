@@ -1,6 +1,6 @@
 ---
 date: '2026-05-20T15:30:06+02:00'
-draft: true
+draft: false
 title: 'The Antigravity CLI is a disaster'
 showToc: true
 ---
