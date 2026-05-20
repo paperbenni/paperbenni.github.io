@@ -1,5 +1,5 @@
 ---
-date: '2025-11-05T13:22:49+01:00'
+date: '2026-03-04T18:33:16+01:00'
 draft: true
 title: 'Opencode'
 showToc: true
@@ -7,6 +7,7 @@ showToc: true
 
 
 Wishlist
+
 edit queue after submitting
 delete messages from queue
 
@@ -14,7 +15,8 @@ delete messages from queue
 disable/enable MCP servers in UI
 configure plugins in UI
 
+Live token counter thingy
 
-
+Preview for file edits like amp and cline (VS Code) have
 
 
