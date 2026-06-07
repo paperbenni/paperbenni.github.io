@@ -10,7 +10,7 @@ bullshit. DevOps is safe from being replaced by Codex for now, holy crap is it
 incompetent in this area. The deployment process of OpenClaw is a nightmare. I
 don't mean this as in "I want it on the App Store, where is the exe smelly
 nerds" kind of way, I mean that even as someone who has worked in DevOps and who
-is has developed an Arch Linux installer, the experience and outcome is bad. 
+has developed an Arch Linux installer, the experience and outcome is bad. 
 
 The docker-compose file contains a bunch of environment variables. The file
 itself is not meant to be used as-is, if you do that you will end up with a
@@ -28,8 +28,8 @@ not going to be able to handle it and you are ending up with an empty gateway to
 (which is what they call their API keys). Even better, the produced json config
 is still invalid, and you end up with a dead container, which is derived from
 the same image as the gateway, which doesn't seem to do anything really. Because
-the produced config is still invalid (the onboaring process is only meant to
-produce valid config for bare-metal non-standboxed installations), you still end
+the produced config is still invalid (the onboarding process is only meant to
+produce valid config for bare-metal non-sandboxed installations), you still end
 up with a crashloop, which means you cannot even edit the config. By default,
 named volumes are used, so you cannot easily edit the config while container is
 not running. The solution is to make the startup command a really long sleep, so

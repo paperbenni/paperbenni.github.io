@@ -30,8 +30,8 @@ credits or whatever, I would like to know that!!
 
 ## Better command handling on Telegram
 
-Let me see a list of skills from Telegram commands. `/skill` does autocomplte,
-but only the command name, not the skill name . I would love a `/skill list` or
+Let me see a list of skills from Telegram commands. `/skill` does autocomplete,
+but only the command name, not the skill name. I would love a `/skill list` or
 just `/skills` which lists the skills with their descriptions. `/model` also has
 an amazing menu way of browsing models, browsing skills in this way would be
 really nice. Maybe you could even access clawdhub or whatever it's called
@@ -47,7 +47,7 @@ bad.
 
 Over time, OpenClaw gains new capabilities and features. With a changing harness
 and different tools, the model needs to be prompted to behave differently. 
-It should not be my responsiblity to keep prompts and tools in sync. 
+It should not be my responsibility to keep prompts and tools in sync. 
 
 Any behavior that depends on tools and OpenClaw implementation details which
 change frequently should not go in files which do not automatically update. 
@@ -59,7 +59,7 @@ config which gets created once and then is my responsibility, I have essentially
 forked that part of the project. 
 
 If the tools change, the prompts should change as well, and it should not be my
-responsibility do do that. Keeping up with new discoveries in how to get models
+responsibility to do that. Keeping up with new discoveries in how to get models
 to be more effective assistants is the maintainer's job, not mine. And if I do
 make discoveries, I would like to upstream those instead of having them rot in
 my own config. 
@@ -67,7 +67,7 @@ my own config.
 Ideally the agent should not rely on its own SOUL.md or AGENTS.md too much. 
 It self-modifies and as such degrades over time. I have yet to see a model
 aware enough of its own faults and quirks so it can prompt itself in a way where
-it doesn't eventually plumet in performance. 
+it doesn't eventually plummet in performance. 
 
 As an example, when I first tried OpenClaw (it was still called ClawdBot at that
 time), I needed to instruct it which folder to use for memories. It used the
@@ -92,7 +92,7 @@ use the read-file tool to "invoke" it and because the conversation was around
 the pomodoro skill, it knew roughly what it was. This of course completely falls
 apart once the conversation centers around other things. 
 
-The fix for me was to instruct teh model to read the skills specification before
+The fix for me was to instruct the model to read the skills specification before
 creating a skill, and persisting those behavioral instructions in its memory. 
 
 Nowadays, there is some prompt injected into context which contains more
@@ -100,7 +100,7 @@ concrete skill format instructions whenever the model creates a skill, and there
 is a skill template which the model can gradually modify. This is a way better
 approach than what I did before. I would like to see more of that, in fact,
 there should not be a single tool or behavior in OpenClaw which requires the
-user to write programming like prompts into TOOLS.md or SOULD.md or any other of
+user to write programming like prompts into TOOLS.md or SOUL.md or any other of
 the user config files. My initial approach was wrong. Had I not noticed the new
 upstream prompt injection, the model would have been stuck with two potentially
 conflicting instructions when asked to deal with skills, which would waste tons
@@ -111,7 +111,7 @@ information in config files, and expand the capabilities of the harness instead.
 
 Do not introduce any features which confuse the agent if they are not used with
 programming-like prompts. Programs can have bugs, and if I program in a
-non-deterministic language on top of 400k lines of typescript slop, then I will
+non-deterministic language on top of 400k lines of TypeScript slop, then I will
 have even more bugs. 
 
 
