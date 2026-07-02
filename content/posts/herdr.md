@@ -1,6 +1,6 @@
 ---
 date: '2026-06-25T18:27:40+02:00'
-draft: true
+draft: false
 title: 'Herdr review and wishlist'
 showToc: true
 ---
@@ -13,8 +13,12 @@ needs manual configuration to have proper mouse support. It does not reattach to
 sessions by default. It makes selecting things in the terminal a pain, and it
 makes copying to the system clipboard over ssh a pain. Its default theme looks
 terrible. Its catppuccin theme needs you to install a bunch of bash files and is
-not easily committed to dotfile managers. 
-
+not easily committed to dotfile managers. Its plugin system is messy and pretty
+much unmaintained. I use tmux all the time, but these quirks are annoying. Herdr
+just does every single thing I listed here slightly better. Nothing
+revolutionary, but very very nice. Thank you herdr people. It also seems to have
+quite a rapid pace of development. I have high hopes for it, here are some of
+the things I hope it can do one day. 
 
 
 # Herdr wishlist
@@ -96,9 +100,11 @@ Herdr does not do anything revolutionary, it's just more convenient than tmux,
 and in this case it clearly is not, typing my long ssh key password 4 times on
 my phone just to quickly check something is a huge UX papercut. 
 
-# Please do it
+# Please do it, I could too
 
-I know many LLM focussed
-
+I know many LLM focussed projects tend to get many unreviewed slop PRs, and as
+such, don't spend much time reviewing outside PRs. If there is a chance of my
+outside contributions being accepted, I would be happy to implement some of the
+above. 
 
 
